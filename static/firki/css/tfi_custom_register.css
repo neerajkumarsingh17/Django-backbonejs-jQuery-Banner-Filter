@@ -1,0 +1,184 @@
+/* this css is applied to register / sign up form page of project.
+*/
+
+.content-wrapper.tfi-content-wrapper#content > .register.container.tfi.tfi-register {
+    width: inherit;
+}
+
+.register.container.tfi.tfi-register h2.mainHeading {
+    line-height: normal;
+    padding-top: 21px;
+    color: #01b4ca;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(../images/img-pattern-yellow.png) repeat;
+}
+
+.register.container.tfi.tfi-register .content {
+    margin-bottom: 144px;
+    width: 620px;
+    margin-top: 68px;
+    margin-left: 215px;
+    -webkit-box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+    border-radius: 5px;
+}
+
+.register.container.tfi.tfi-register .content #register-form {
+    margin-left: 95px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.register.container.tfi.tfi-register .content #register-form .status.message {
+    width: 430px;
+    outline: none;
+}
+
+.register.container.tfi.tfi-register form label {
+    cursor: default;
+}
+
+.register.container.tfi.tfi-register form .field.required label {
+    font-family: 'Lato-Black';
+    font-weight: normal;
+    color: #58595b;
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    margin-top: 21px;
+}
+
+.register.container.tfi.tfi-register form .field.required:first-child label {
+    margin-top: 0px;
+}
+
+.register.container.tfi.tfi-register form li.field p.change-btn {
+    display: inline;
+    margin-left: 10px;
+    line-height: 49px;
+    cursor: pointer;
+    color: #01b4ca;
+}
+
+.register.container.tfi.tfi-register form .field input.firki-input {
+    font-family: 'Lato-Regular';
+    color: #575757;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 45px;
+    width: 430px;
+    margin-top: 4px;
+}
+
+.register.container.tfi.tfi-register form .field input.firki-input:focus {
+    box-shadow: none;
+    border: 1px solid #01b4ca;
+    outline: none;
+}
+
+.register.container.tfi.tfi-register form .field input.disabled-input-field {
+    background-color: #e1e1e1;
+}
+
+.register.container.tfi.tfi-register form li.field {
+    overflow: hidden;
+    margin: 0 0 0 0;
+}
+
+.register.container.tfi.tfi-register form li.field a.changeinput {
+    font-family: 'Lato-Regular';
+    color: #01b4ca;
+    font-size: 18px;
+    line-height: 44px;
+    margin-left: 15px;
+    display: block;
+    float: left;
+    text-transform: capitalize;
+}
+
+.register.container.tfi.tfi-register form li.field a.changeinput:hover {
+    text-decoration: none;
+    outline: none;
+    border-bottom: none;
+}
+
+.register.container.tfi.tfi-register form .display-none {
+    display: none;
+}
+
+.register.container.tfi.tfi-register form .group.group-form.group-form-requiredinformation {
+    padding-bottom: 0px;
+}
+
+.register.container.tfi.tfi-register form .group.group-form.group-form-accountacknowledgements {
+    padding-bottom: 0px;
+}
+
+
+/*.register.container.tfi form .field.checkbox input[type="checkbox"]{
+}*/
+
+.register.container.tfi.tfi-register form .group.group-form.group-form-accountacknowledgements .field.checkbox input[type="checkbox"] {
+    margin-top: 18px;
+    margin-left: 0;
+}
+
+.register.container.tfi.tfi-register form .field.required label.radiolabel {
+    padding-left: 0px;
+    line-height: 16px;
+    text-transform: none;
+    margin-left: 17px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    font-family: "Lato-Black";
+    font-weight: normal;
+    color: #58595b;
+    font-size: 14px;
+}
+
+.register.container.tfi.tfi-register form .field.required label.radiolabel a {
+    color: #01b4ca;
+}
+
+.register.container.tfi.tfi-register form .field.required label.radiolabel a:hover,
+.register.container.tfi.tfi-register form .field.required label.radiolabel a:focus {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.register.container.tfi.tfi-register form .group.group-form.group-form-accountacknowledgements .field.required.checkbox {
+    margin: 0 18px 0 0;
+}
+
+.register.container.tfi.tfi-register .form-actions button[type="submit"] {
+    font-family: "Lato-Black";
+    font-weight: normal !important;
+    font-size: 18px;
+    background-color: #01b4ca;
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: 3px solid #018696;
+    box-shadow: none;
+    height: 45px;
+    width: 430px;
+}
+
+.register.container.tfi.tfi-register .form-actions button[type="submit"]:hover {
+    background: #01d9f4;
+}
+
+@media(max-width: 992px) {
+    .register.container.tfi.tfi-register .content {
+        margin: 120px auto 144px auto;
+        float: none;
+    }
+}

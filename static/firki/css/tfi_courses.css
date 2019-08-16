@@ -1,0 +1,488 @@
+.courses-container.tfi {
+    padding: 68px 10px 0 10px;
+    max-width: 1180px;
+}
+
+.content-wrapper.tfi-content-wrapper .find-courses {
+    background-color: #fff;
+}
+
+.courses-container.tfi .courseSearchBox {
+    width: 247px;
+    float: right;
+    padding: 0px;
+}
+
+.courses-container.tfi .courses h2.mainHeading {
+    padding-top: 0px;
+    font-family: 'Lato-Black';
+    font-size: 32px;
+    color: #01b4ca;
+    line-height: normal;
+    padding-top: 21px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(../images/img-pattern-yellow.png) repeat;
+}
+
+.courses-container.tfi .courseSearchBox .discovery-input {
+    height: 30px;
+    width: 217px;
+    line-height: normal;
+    border: 1px solid #c8c8c8;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #575757;
+}
+
+.courses-container.tfi .courseSearchBox .discovery-input:focus {
+    border: 1px solid #01b4ca;
+}
+
+.courses-container.tfi .courseSearchBox .discovery-submit {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    background-color: #01b4ca;
+    border: 1px solid #018696;
+    font-size: 16px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.courses-container.tfi .courseSearchBox .discovery-submit i {
+    font-size: 16px;
+}
+
+.courses-container.tfi section.courses {
+    -webkit-box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+}
+
+
+/*code for inner block (for li) can remove this code to retrive previous look of courses page*/
+
+.courses-container.tfi section.courses ul.courses-listing li.courses-listing-item {
+    width: 250px !important;
+    min-height: 342px !important;
+    border-left: 1px solid #898989;
+    border-top: 1px solid #898989;
+    border-right: 1px solid #898989;
+    border-bottom: 2px solid #01b4ca;
+    float: left;
+    margin-left: 32px !important;
+    margin-right: 0px !important;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.find-courses header.search .inner-wrapper>hgroup,
+.university-profile header.search .inner-wrapper>hgroup {
+    padding: 0px;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course {
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course a header.course-image .cover-image img {
+    height: 130px;
+    display: block;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course a header.course-image .cover-image:before {
+    height: 130px;
+    border-radius: 4px;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course a header.course-image .cover-image {
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info {
+    padding: 13px 15px;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name .course-organization {
+    font-family: 'Lato-Bold';
+    font-weight: normal;
+    font-size: 14px;
+    color: #58595b;
+    padding: 0 0 8px 0;
+    text-transform: capitalize;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name .course-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Lato-Regular';
+    color: #01b4ca;
+    font-size: 23px;
+    height: auto;
+    padding: 0px;
+    word-wrap: normal;
+    text-transform: capitalize;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name .course-code {
+    display: none;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info p {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    word-wrap: break-word;
+    /*    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+
+    overflow: hidden;
+    position: relative;
+    max-height: 132px;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info p:before {
+    content: '...';
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    background: #fff;
+}
+
+.courses-container.tfi section.courses ul.courses-listing .courses-listing-item article.course .course-info p:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+}
+
+.courses-container.tfi > section.courses {
+    padding: 0px 0px 32px 0px !important;
+    border-radius: 5px;
+}
+
+.find-courses .courses-container.tfi .search-facets {
+    margin: 40px 0 70px 0;
+    border: 1px solid #01b4ca;
+    border-radius: 5px;
+    width: 247px;
+    float: right;
+}
+
+.find-courses .courses-container.tfi .search-facets section {
+    padding: 0px;
+}
+
+.find-courses .courses-container.tfi .search-facets section h3 {
+    font-family: 'Lato-Black';
+    font-weight: normal;
+    font-size: 18px;
+    color: #58595b;
+    padding: 12px 10px 17px 10px;
+    margin: 0px;
+    border-top: 1px solid #01b4ca;
+}
+.find-courses .courses-container.tfi .search-facets section h3:first-child{
+    border-top: none;
+}
+.find-courses .courses-container.tfi .search-facets section .facet-list li {
+    border-top: 0px;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list li button {
+    font-family: 'Lato-Regular';
+    color: #01b4ca;
+    font-size: 16px;
+    height: 27px;
+    font-weight: normal;
+    line-height: 15px;
+    border-radius: 0px;
+}
+.find-courses .courses-container.tfi .search-facets section .facet-list li button:hover{
+    background: #01b4ca;
+    color: #fff;
+}
+.find-courses .courses-container.tfi .search-facets section .facet-list li:hover,
+.find-courses .courses-container.tfi .search-facets section .facet-list li.active {
+    background: #01b4ca;
+    color: #fff;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list li:hover button,
+.find-courses .courses-container.tfi .search-facets section .facet-list li:hover button span.count,
+.find-courses .courses-container.tfi .search-facets section .facet-list li.active button,
+.find-courses .courses-container.tfi .search-facets section .facet-list li.active button span.count {
+    color: #fff;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list li button span.count {
+    line-height: 16px;
+    font-size: 15px;
+    color: #01b4ca;
+}
+
+.find-courses .courses-container.tfi .search-facets .search-facets-lists section {
+    border-top: 1px solid #01b4ca;
+}
+
+.find-courses .courses-container.tfi .search-facets .search-facets-lists section:first-child {
+    border-top: none;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list.collapse {
+    display: block;
+    padding-bottom: 17px;
+}
+
+.find-courses .courses-container #discovery-form #discovery-message {
+    line-height: normal;
+    float: left;
+    width: 247px;
+    margin-right: 0px;
+    margin-top: 6px;
+    font-size: 12px;
+    font-family: 'Lato-Regular';
+    color: #f16b5f;
+}
+
+.find-courses .filters .flt-right,
+.university-profile .filters .flt-right {
+    font-size: 18px;
+    font-family: 'Lato-Black';
+    color: #01b4ca;
+    padding: 0px;
+    margin: 14px 0 14px 0;
+    line-height: 24px;
+}
+
+.find-courses .filters li {
+    background-color: #01b4ca;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Lato-Regular';
+    padding: 1px 9px;
+    margin: 10px 20px 10px 0;
+    border-radius: 5px;
+}
+
+.find-courses .filters li button.discovery-button {
+    padding: 0px;
+    margin: 0px;
+}
+
+.find-courses .filters li button.discovery-button span.query {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Lato-Regular';
+    line-height: 26px;
+}
+
+.find-courses .filters li .facet-option i {
+    color: #fff;
+}
+
+.find-courses .discovery-button {
+    padding: 0px 0px;
+}
+
+.find-courses .filters,
+.university-profile .filters {
+    background-color: #f1f1f1;
+    border: 1px solid #999;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    margin-left: 32px;
+    margin-right: 32px;
+    box-sizing: border-box;
+    width: auto;
+    border-radius: 5px;
+    padding: 0px 10px;
+    max-height: 50px;
+}
+
+.find-courses .courses-container #discovery-form #loading-indicator {
+    float: right;
+    line-height: normal;
+    margin-right: 10px;
+    position: absolute;
+    top: 112px;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list li button span.added {
+    right: 36px;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list li i {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list li i.shown {
+    display: block;
+}
+
+.find-courses .courses-container.tfi .search-facets section .facet-list li button span.hidecount {
+    display: none;
+}
+.find-courses .courses .course a button{
+    background: #01b4ca;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    float:left;
+    padding: 10px;
+    margin-bottom:5px;
+}
+
+.find-courses .courses .course .view-course-link{
+    margin-top: 33%;
+}
+.find-courses .courses .course a {
+    margin-bottom: 0px;
+}
+
+.find-courses .wrapper-search-context .wrapper-search-input{
+    float: right;
+}
+.find-courses .wrapper-search-context{
+    float: right;
+}
+.find-courses .filters, .university-profile .filters{
+    border:none;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course{
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: none;
+    background-color: #fff;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course a header.course-image .cover-image {
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course a header.course-image .cover-image img {
+    height: 130px;
+    display: block;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course a header.course-image .cover-image:before {
+    height: 130px;
+    border-radius: 4px;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course .course-info {
+    padding: 13px 15px;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name .course-organization {
+    font-family: 'Lato-Bold';
+    font-weight: normal;
+    font-size: 14px;
+    color: #58595b;
+    padding: 0 0 8px 0;
+    text-transform: capitalize;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name .course-code {
+    display: none;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course .course-info h2.course-name .course-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Lato-Regular';
+    color: #01b4ca;
+    font-size: 23px;
+    height: auto;
+    padding: 0px;
+    word-wrap: normal;
+    text-transform: capitalize;
+}
+.courses-container.tfi .courses ul.courses-listing .courses-listing-item article.course .course-info p {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow: hidden;
+    position: relative;
+    max-height: 132px;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+    color: #3c3c3c;
+    font: normal 1em/1.6em Georgia,Cambria,"Times New Roman",Times,serif;
+}
+.find-courses .courses-container.tfi .search-facets .header-search-facets{
+    font-family: 'Lato-Black';
+    font-weight: normal;
+    font-size: 18px;
+    color: #58595b;
+    padding: 12px 10px 17px 10px;
+    margin: 0px;
+    letter-spacing: 0;
+}
+.find-courses .courses-container.tfi .search-facets .tfi-default-search-list .toggle .show-more{
+    color: #018696;
+    margin-top: 10px;
+}
+.find-courses .courses-container.tfi .search-facets .tfi-default-search-list .toggle .show-less{
+    color: #018696;
+}
+@media(max-width: 1024px) {
+    .find-courses .courses-container .courses:not(.no-course-discovery) {
+        width: 72%;
+    }
+    .courses-container.tfi section.courses ul.courses-listing li.courses-listing-item {
+        width: 30% !important;
+        margin-right: 1% !important;
+    }
+}
+
+@media(max-width: 992px) {
+    .find-courses .courses-container .courses:not(.no-course-discovery) {
+        width: 62%;
+    }
+    .courses-container.tfi section.courses ul.courses-listing li.courses-listing-item {
+        width: 50% !important;
+        margin: 24px auto !important;
+        float: none !important;
+    }
+}

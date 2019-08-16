@@ -1,0 +1,383 @@
+.tfi .container label{
+  font-family: 'Lato-Regular' !important;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+/*Scrollbar*/           
+.scrollbar {
+    float: left;
+    background: #fff;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.tfi .container .scrollbar-info{
+  width: 100%;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #4285F4; }
+
+.scrollbar-danger::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-danger::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-danger::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #ff3547; }
+
+.scrollbar-warning::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-warning::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-warning::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #FF8800; }
+
+.scrollbar-success::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-success::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-success::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #00C851; }
+
+.scrollbar-info::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-info::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-info::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #33b5e5; }
+
+.scrollbar-default::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-default::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-default::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #2BBBAD; }
+
+.scrollbar-secondary::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-secondary::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-secondary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #aa66cc; }
+
+
+/*Panel*/
+.tfi .custom-panel .tfi-panel .body{
+    padding-top: 0px; 
+}
+
+.tfi .custom-panel .tfi-panel .row div:first-child{
+    margin-top: 0px; 
+}
+
+/*Theme colors*/
+
+.theme-color{
+    color: #01b4ca;
+}
+
+.theme-bg{
+    background-color: #01b4ca;
+}
+
+.theme-color-link{
+    color: rgb(255, 133, 9);
+}
+
+/*Quote*/
+
+.tfi .quote .quote-icon{
+    font-size: 25px;
+    padding-left: 23px;
+    color: #FFF;
+    font-weight: 700;
+    position: absolute;
+    top: 9px;
+}
+
+
+.tfi .quote .quote-text{
+    font-size: 26px;
+    padding-left: 55px;
+    margin-top: 32px;
+    color: #FFF;
+    line-height: normal;
+}
+
+
+.tfi .quote .quote-author{
+    font-size: 21px;
+    float: right;
+    margin-right: 27px;
+    color: #FFF;
+}
+
+.tfi .quote .img-overlay img {
+  margin: 0 auto;
+  max-height: 100%;
+  height: 168px;
+}
+
+.tfi .quote .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 95, 105, 0.69);
+}
+
+.tfi .no-padding{
+    padding: 0;
+}
+
+.tfi .custom-panel{
+    margin-top: 15px;
+    box-shadow: 1px 1px 1px 1px #ececec;
+}
+
+
+.tfi .custom-panel .tfi-panel>div{
+    padding: 15px;
+}
+
+
+.tfi .custom-panel .tfi-panel .header .icon{
+    font-size: 1.8em;   
+}
+
+.tfi .custom-panel .tfi-panel .header .title{
+    font-size: 1.8em;    
+    margin-left:10px
+}
+
+
+.tfi .custom-panel .tfi-panel .header .link{
+    float:right;
+    margin-top:10px;
+}
+
+
+/*Discussion*/
+
+.tfi .custom-panel .tfi-panel .discussion{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tfi .custom-panel .tfi-panel .discussion:nth-child(odd) {
+    background: #f7f6f6;
+}
+
+.tfi .custom-panel .tfi-panel .discussion .avatar{
+    border-radius: 50%;
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+
+.tfi .custom-panel .tfi-panel .discussion .title{
+    min-height: 38px;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+.tfi .custom-panel .tfi-panel .discussion .title .text{
+    max-width: 100%;
+}
+
+.tfi .custom-panel .tfi-panel .discussion .title .btn{
+    float: right;
+}
+
+.tfi .custom-panel .tfi-panel .discussion .desc{
+    font-size: 1em;
+}
+
+.tfi .custom-panel .tfi-panel .discussion .other{
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/*Announcements*/
+
+.tfi .custom-panel .tfi-panel .announcement{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tfi .custom-panel .tfi-panel .announcement:nth-child(odd) {
+    background: #f7f6f6;
+}
+
+.tfi .custom-panel .tfi-panel .announcement .avatar{
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+
+.tfi .custom-panel .tfi-panel .announcement .title{
+    min-height: 38px;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+.tfi .custom-panel .tfi-panel .announcement .title .text{
+    max-width: 67%;
+}
+
+.tfi .custom-panel .tfi-panel .announcement .desc{
+    font-size: 1em;
+}
+
+.tfi .custom-panel .tfi-panel .announcement .other{
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*Courses*/
+
+.tfi .custom-panel .tfi-panel .course{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tfi .custom-panel .tfi-panel .course:nth-child(odd) {
+    background: #f7f6f6;
+}
+
+.tfi .custom-panel .tfi-panel .course .avatar{
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+
+.tfi .custom-panel .tfi-panel .course .title{
+    min-height: 38px;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+.tfi .custom-panel .tfi-panel .course .title .text{
+    max-width: 67%;
+}
+
+.tfi .custom-panel .tfi-panel .course .desc{
+    font-size: 1em;
+}
+
+.tfi .custom-panel .tfi-panel .course .other{
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tfi .custom-panel.courses .scrollbar{
+    max-height: 500px;
+    overflow-x: auto;
+}
+
+/* Absolute Center Spinner */
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.go-to, .go-to-self{
+  cursor: pointer;
+}
+
+/*dashboard page css*/
+
+.dashboard{
+  padding: 0px !important;
+}
+
+.dashboard#dashboard-main {
+    padding: 0 0 0 0;
+}
+
+.dashboard#dashboard-main .my-courses{
+  width: 100%;
+}
+
+
+.dashboard#dashboard-main .my-courses .listing-courses .course-item {
+    margin-bottom: 0px;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.dashboard#dashboard-main .my-courses .course .details .course-actions .wrapper-action-more .action {
+    padding: 7px;
+    text-align: center;
+    width: 100%;
+}
+
+.dashboard#dashboard-main .my-courses .course .details .course-actions .wrapper-action-more .actions-dropdown {
+    top: 34px;
+}

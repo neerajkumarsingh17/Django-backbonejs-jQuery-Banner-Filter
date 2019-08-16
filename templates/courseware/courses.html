@@ -1,0 +1,48 @@
+<%!
+  import json
+  from django.utils.translation import ugettext as _
+  from openedx.core.djangolib.js_utils import dump_js_escaped_json
+%>
+<%inherit file="../courses-base.html" />
+<%
+  course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
+%>
+
+<%namespace name='static' file='../static_content.html'/>
+
+<link href="${static.url('firki/css/courses-page.css')}" rel="stylesheet">
+
+<script data-main="${static.url('js/discovery/app')}" src="${static.url('js/discovery/require.js')}"></script>
+
+<%block name="pagetitle">${_("Courses")}</%block>
+
+    % if course_discovery_enabled:
+    <div id="wrapper" class="ease3 tfi courses">
+
+        <div class="col-md-12">
+            <div id="search-form">
+
+            </div>
+        </div>
+
+
+        <div class="col-md-12" style="margin-top: 23px;margin-bottom: 23px;">
+
+            <div class="col-md-3 left-nav" id="left-nav">
+
+            </div>
+                <div id='data_not_found_course_msg'></div>
+            <div class="col-md-9">
+                <div id="video-list-container" class="ease5 video-list-container">
+                    <!-- <div id="classroom_vision" class="video-category slide-category">
+                        <a href="javascript:;">
+                            <h3>CLASSROOM VISION AND BIG GOALS</h3>
+                            <h3 class="course-count theme-color"></h3>
+                        </a>
+                        <div class="video-list-slider"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    % endif

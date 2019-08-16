@@ -1,0 +1,28 @@
+
+
+<section id="levels">
+        <label>Levels</label>
+        <ul>
+            <% _.each(data.levels.termsEx,function(term, index){ %>
+                <% if (term.key != "") { %>
+                    <li class="levels" id="levels_id" title="<%= term.desc %>" data-pk="<%= term.key %>"><%= term.key %><span class="theme-color" data-pk="<%= term.key %>"> (<%= term.count %>)</span>
+                      <span class="close-btn"><i class="glyphicon glyphicon-remove"></i></span>
+                    </li>
+                <% } %>
+            <% }); %>
+        </ul>
+    </section>
+
+<section id="display_organization">
+    <label>Categories</label>
+    <ul>
+        <% _.each(data.categories.termsEx, function(term, index){ %>
+            <% if (term.key != "") { %>
+                <li class="display_organization" id="categories_id" title="<%= term.desc %>" data-pk="<%= term.key %>"><%= term.key.replace(/_/g, ' ').toUpperCase() %><span class="theme-color" data-pk="<%= term.key %>"> (<%= term.count %>)</span>
+                  <span class="close-btn"><i class="glyphicon glyphicon-remove"></i></span>
+                </li>
+            <% } %>
+        <% }); %>
+    </ul>
+    
+</section>

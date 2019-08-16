@@ -1,0 +1,54 @@
+ .tfi h3.sectionHeading.questionHeading {
+     padding-top: 18px;
+     padding-bottom: 8px;
+     line-height: normal;
+ }
+ 
+ .tfi h2.mainHeading.stillHaveQuestion {
+     font-family: 'Lato-Black';
+     color: #58595b;
+     font-size: 32px;
+     padding-top: 63px;
+     margin-bottom: 0px;
+     margin-top: 0px;
+     line-height: 26px;
+     text-transform: uppercase;
+ }
+ 
+ .tfi .btn.stillHaveQuestionBtn {
+     width: 260px;
+     font-family: 'Lato-Black';
+     color: #fff;
+     font-size: 17px;
+     background-color: #01b4ca;
+     border-radius: 5px;
+     border-bottom: 3px solid #018696;
+     border-top: 0;
+     border-right: 0;
+     border-left: 0;
+     text-transform: uppercase;
+     box-shadow: none;
+     text-transform: center;
+     outline: none;
+     margin-top: 63px;
+     padding: 12px 0px 7px 0px;
+ }
+ 
+ .tfi .btn.stillHaveQuestionBtn:hover {
+     background: #01d9f4;
+ }
+ 
+ .tfi .btn.stillHaveQuestionBtn:active:hover {
+     color: #fff;
+     outline: none;
+ }
+ 
+ .pageContentPara a.gmail-link.color-skyblue {
+     color: #01b4ca;
+ }
+ 
+ .pageContentPara a.gmail-link.color-skyblue:focus,
+ .pageContentPara a.gmail-link.color-skyblue:hover {
+     outline: none;
+     text-decoration: none;
+ }

@@ -1,0 +1,53 @@
+<%!
+  import json
+  from django.utils.translation import ugettext as _
+  from openedx.core.djangolib.js_utils import dump_js_escaped_json
+%>
+<%inherit file="../courses-base.html" />
+
+<%namespace name='static' file='../static_content.html'/>
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+-->
+<link href="${static.url('firki/css/courses-page.css')}" rel="stylesheet">
+<link href="${static.url('firki/css/resources.css')}" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">   
+
+<script data-main="${static.url('js/resources/app')}" src="${static.url('js/resources/require.js')}"></script>
+<a href="https://www.flaticon.com"></a><a href="http://creativecommons.org/licenses/by/3.0/"></a><a data-file="001-open-book" href="http://www.freepik.com"></a> 
+     
+<%block name="pagetitle">${_("Resources")}</%block>
+<div id="wrapper" class="ease3 tfi courses">
+
+    <div class="col-md-12"  style="margin-bottom: 23px;">
+        <!--<div class="w3-content">
+          <img class="mySlides" src="https://i.imgur.com/ZtdhrUA.jpg" alt="custom_html_banner1" style="width:100%%">
+        </div>-->
+        <div class="col-md-12 banner" id="banner" style="margin-bottom: 23px;">>
+        
+        </div>
+        <div class="col-md-2 left-nav" id="left-nav">
+
+        </div>
+
+        <div class="col-md-10 full-width resource_parent_div">
+          <div id="search-form">
+
+          </div>
+          <div id="resources_div">
+            
+          </div>
+        </div>
+        <!--If data not found then user understanding message-->
+         <div id="data_not_found_msg"></div>
+        <!--<div class="col-md-3 right-nav" id="right-nav" style="display: none">
+         
+        </div>-->
+    </div>
+</div>
+</div>

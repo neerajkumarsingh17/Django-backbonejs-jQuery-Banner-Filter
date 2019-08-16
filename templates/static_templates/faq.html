@@ -1,0 +1,178 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+<%! 
+from django.utils.translation import ugettext as _ 
+%>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("FAQ")}</%block>
+
+<link href="${static.url('assets/css/red-theme.css')}" rel="stylesheet" type="text/css"/>
+
+<!-- Start FAQ -->
+<div class="g-bg-color--firki-faq">
+
+    <div ><!--remove class="container" -->
+
+        <div class="g-text-center--xs g-padding-y-20--xs g-padding-y-20--sm">
+            <h2 class="g-font-size-32--xs g-font-size-36--md g-color--sunset-orange">FAQs</h2>
+        </div>
+
+        <!-- Accordion -->
+        <div class="s-faq">
+            <div class="container g-padding-y-10--xs">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="cbp cbp-l-grid-faq js__grid-faq">
+
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="text-none s-faq-grid__title">Do I have to pay??</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                           All courses and resources on Firki are<b>free of charge.</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">I don’t have an email account, can I still sign up?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                           You will need to have an email account. You can also sign up using your Google account. 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">This is really exciting! How can I get my school to sign up?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                          Create a learning group on Firki, and invite your teachers to enroll and participate.<br>
+Write to us on contactfirki@teachforindia.org to get more personalized support from our team.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">How do I sign up as an individual teacher?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                           We are glad you want to sign up on Firki. Anyone can sign up on Firki - just click on the ‘Sign-Up‘ tab and follow the directions to create your account. Once you have an account, you can access dozens of courses, resources, webinars, and learning groups.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">I want to sign up in Hindi for now, can I change the language later?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+   Firki is currently available only in English. We are working on getting our content translated into other regional languages, including Hindi. 
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">Why is it recommended that I sign up with my school team?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                           We have learned that working with peers on professional development is a huge motivating factors for all teachers and also helps build a culture of feedback in the school. The courses are designed for teachers as a part of a school team to share inputs and ideas on each other’s teaching practice and offer mutual support. Having said that, it does not mean that you cannot sign up as an individual teacher
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">Is it possible to fail a course?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                            There is no such thing as passing or failing our courses. The assessments are only to guide your learning and development as a teacher. If you get below 90% in the assessment or feel like you need to work on a course some more, you are more than welcome to take it again. You can take each course as many times you want. Even if you get all the answers right in the first attempt, we suggest you keep revisiting the courses to keep your practice sharp! 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">Will all my results be shared with my school principal?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                         If you are part of closed learning group on Firki,  your mentor can see your reflective and evaluative responses. We believe it is great to share your experiences and receive feedback, as it helps you to learn and grow by supporting each other. 
+As an individual teacher, all your course-related information will be private. For more details regarding the use of information you provide on our website, check our Privacy Policy.
+</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">Can I skip the end of course assessments?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                            No, you cannot skip the assessments at the end of each course. We strongly believe that the assessments are designed for you to be able to engage better with the content and learn more. It is not a reflection of how competent you are as a teacher but just an opportunity to understand the areas you are strong in and what you should focus more on. Without the assessment, the course will not be marked complete. 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">Will I get a certification from the University or any accreditation when I complete this course?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                           Firki acknowledges learners who have completed an entire level of courses. Firki courses are also aligned to the CENTA standards. Firki has a partnership with CENTA, an organization that conducts Teacher Olympiads and provides market-driven Teacher Certification.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cbp-item">
+                                <div class="cbp-caption">
+                                    <div class="s-faq-grid__divider cbp-caption-defaultWrap">
+                                        <h4 class="s-faq-grid__title">Can I download Firki courses and use it in my school?</h4>
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="g-color--gray">
+                                            Yes. You can download the Firki courses through Firki mobile app, that is available on the Google PlaySore.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="${static.url('assets/js/components/faq.js')}"></script>

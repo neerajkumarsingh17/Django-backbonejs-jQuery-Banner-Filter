@@ -1,0 +1,253 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='static_content.html'/>
+<%!
+from openedx.core.djangolib.markup import HTML, Text
+from django.utils.translation import ugettext as _
+from django.template.defaultfilters import escapejs
+import json
+import urllib
+from django.conf import settings
+from django.core.urlresolvers import reverse
+from video_background.models import BackgroundVideo
+%>
+
+<%inherit file="main.html" />
+
+<%block name="pagetitle">${_("Firki | The Teacher Training Portal")}</%block>
+
+<!--========== SWIPER SLIDER ==========-->
+<div class="s-swiper js__swiper-one-item">
+    <!-- Swiper Wrapper -->
+    <div class="swiper-wrapper">
+        <div class=" g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('${static.url('assets/img/slide/1.jpg')}');">
+            <div class="g-text-center--xs g-ver-center--xs"><!--remove container-->
+                <div class="g-margin-b-30--xs">
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white">Teaching is difficult</h4>
+                    <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--black">Firki is with you on your journey!</h1>
+                </div>
+                <a class="js__popup__youtube" href="https://www.youtube.com/watch?v=MS0MQ4DpriI//?rel=0&autoplay=1&showinfo=0&fs=0" title="Intro Video">
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white">
+                        <span class="g-font-size-18--xs g-font-size-18--sm g-font-size-18--md g-color--black slider-btn"></i> Learn with firki</span>
+                    </h4>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.firki.mobile">
+                <div class="g-margin-t-30--xs">
+                    <h4 class="g-font-size-16--xs g-font-size-16--sm g-font-size-16--md g-color--white">Get mobile app</h4>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('${static.url('assets/img/slide/2.jpg')}');">
+            <div class=" g-text-center--xs g-ver-center--xs"><!--remove container-->
+                <div class="g-margin-b-30--xs">
+                    <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--black">Courses</h1>
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white">Firki has over 60 engaging multimedia based courses that have<br>been co-created with experienced educators in the field of education.<br>Learn teaching strategies and explore classroom stories that can improve <br>your students’ learning outcomes, enhance your classroom practice<br>and overall development. We can also help you start a learning circle with your<br>fellow teachers in the school and take a Firki course together.<br>Write to us at contactfirki@teachforindia.org to know more. <br></h4>
+                </div>
+                <a class="js__popup__youtube" href="https://www.youtube.com/watch?v=MS0MQ4DpriI//?rel=0&autoplay=1&showinfo=0&fs=0" title="Intro Video">
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white">
+                        <span class="g-font-size-18--xs g-font-size-18--sm g-font-size-18--md g-color--black slider-btn"></i> Learn with firki</span>
+                    </h4>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.firki.mobile">
+                <div class="g-margin-t-30--xs">
+                    <h4 class="g-font-size-16--xs g-font-size-16--sm g-font-size-16--md g-color--white">Get the Firki app</h4>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('${static.url('assets/img/slide/3.jpg')}');">
+            <div class=" g-text-center--xs g-ver-center--xs"><!--remove container-->
+                <div class="g-margin-b-30--xs">
+                    <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--black">Discussions</h1>
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white"> Join discussion groups to be part of a conversation<br>
+                    or start one of your own to learn, connect and share with peers and mentors from across the country.</h4>
+                </div>
+                <a class="js__popup__youtube" href="https://www.youtube.com/watch?v=MS0MQ4DpriI//?rel=0&autoplay=1&showinfo=0&fs=0" title="Intro Video">
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white">
+                        <span class="g-font-size-18--xs g-font-size-18--sm g-font-size-18--md g-color--black slider-btn"></i> Learn with firki</span>
+                    </h4>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.firki.mobile">
+                <div class="g-margin-t-30--xs">
+                    <h4 class="g-font-size-16--xs g-font-size-16--sm g-font-size-16--md g-color--white">Get the Firki app</h4>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('${static.url('assets/img/slide/4.jpg')}');">
+            <div class=" g-text-center--xs g-ver-center--xs"><!--remove container-->
+                <div class="g-margin-b-30--xs">
+                    <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--black">Webinars</h1>
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white">Firki's webinar series is an interactive online seminar to discuss and engage <br>with leading experts in the field of education.We  have conducted over 25 webinars <br> on various topics and built a community of enthusiastic educators. <br>Recording of previous webinars and allied resources can be found under<br> the section webinars.Come be a part of one now!<br>
+                    to connect with experts in the field</h4>
+                </div>
+                <a class="js__popup__youtube" href="https://www.youtube.com/watch?v=MS0MQ4DpriI//?rel=0&autoplay=1&showinfo=0&fs=0" title="Intro Video">
+                    <h4 class="g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--white">
+                        <span class="g-font-size-18--xs g-font-size-18--sm g-font-size-18--md g-color--black slider-btn"></i> Learn with firki</span>
+                    </h4>
+                </a>
+                <a href="https://play.google.com/storehttps://www.youtube.com/watch?v=MS0MQ4DpriI//?rel=0&autoplay=1&showinfo=0&fs=0/apps/details?id=org.firki.mobile">
+                <div class="g-margin-t-30--xs">
+                    <h4 class="g-font-size-16--xs g-font-size-16--sm g-font-size-16--md g-color--white">Get the firki App</h4>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Swiper Wrapper -->
+
+    <!-- Arrows -->
+    <div class="g-font-size-22--xs g-color--white-opacity swiper-pagination"></div>
+    <a href="javascript:void(0);" class="s-swiper__arrow-v1--right s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-right js__swiper-btn--next"></a>
+    <a href="javascript:void(0);" class="s-swiper__arrow-v1--left s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
+    <!-- End Arrows -->
+    
+    <a href="#js__scroll-to-section" class="s-scroll-to-section-v1--bc g-margin-b-15--xs">
+        <span class="g-font-size-18--xs g-color--white ti-angle-double-down"></span>
+    </a>
+
+</div>
+<!--========== END SWIPER SLIDER ==========-->
+
+<!--========== PAGE CONTENT ==========-->
+<!-- Features -->
+<div id="js__scroll-to-section" class="g-padding-y-0--xs g-padding-y-0--sm index-row2-box">
+    
+    <div class="g-text-center--xs g-margin-b-10--xs g-padding-t-25--xs">
+        <p class="text-uppercase g-font-size-18--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Firki is a free, world-class online teacher education platform<br> which focuses on supporting and celebrating multiple aspects of your role as a Teacher. </p>
+    </div>
+
+    <div class="row g-margin-b-0--xs g-margin-b-0--md g-margin-t-10--xs g-margin-t-10--md g-bg-color--mine-shaft about-box">
+        <div class="padding-x-60--xs g-padding-x-80--sm col-sm-6 g-margin-b-0--md g-bg-color--goldenrod g-padding-y-20--xs g-padding-y-30--sm g-padding-x-20--smm">
+            <div class="clearfix">
+                <div class="g-media__body">
+                 
+                    <p class="g-margin-b-0--xs g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--black">While many factors contribute to student achievement, research suggests that among school-related factors, teachers’ input and feedback matters the most. We have an urgent need to focus on providing our teachers with effective ongoing support and professional development. 
+Through courses, webinars, learning groups, one-on-one mentor support and classroom observation and feedback, Firki continuously supports teachers in identifying their strengths and building skills to build an effective practice, leading to improved student outcomes.
+</p><br>
+                    <span class="g-font-size-18--xs content-btn go-to" data-url='/about'> How it Works</span>
+                </div>
+            </div>
+        </div>
+        <div class="padding-x-60--xs g-padding-x-80--sm col-sm-6 g-margin-b-0--md g-bg-color--mine-shaft g-padding-y-20--xs g-padding-y-30--sm fill">
+            <div class="clearfix">
+                
+                <div class="g-media__body g-padding-x-20--xs">
+                    <img src="${static.url('assets/img/all.png')}" class="img-responsive">                         
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end row  -->
+</div>
+<!-- End Features -->
+<div id="js__scroll-to-section_1" class="g-padding-y-20--xs g-padding-y-30--sm index-courses">
+    <div class="row g-row-col--0">
+        <div class="g-text-center--xs g-margin-b-80--xs g-margin-b-20--sm">
+        <p class="text-uppercase g-font-size-28--xs g-font-weight--700 g-color--sunset-orange g-letter-spacing--2 g-margin-b-50--xs">Courses</p>
+            <h3 class="g-font-size-16--xs g-font-size-16--md">Firki has over 60 engaging multimedia based courses that have been co-created with experienced educators in the field of education. <br>Learn teaching strategies and explore classroom stories that can improve your students’ learning outcomes, enhance your classroom practice and overall development. We can also help you start a learning circle with your fellow teachers in the school and take a Firki course together. </h3>
+        </div>
+        <!-- Clients -->
+        <div class="s-swiper js__swiper-clients "><!-- remove container -->
+            <div class="swiper-wrapper">
+
+            % for idx, course in enumerate(courses):
+
+                    % if course.levels and idx < 8:
+                
+                    <a class="swiper-slide" href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">
+                        <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <div class="s-team-v1">
+                                <img class="assets/img-responsive g-width-100-percent--xs" src="${course.image_urls.get('small')}" alt="Image" onerror="this.onerror=null;this.src='${static.url('assets/pattern-and-backgrounds/background-red.png')}';">
+                                <div class="g-text-center--xs g-bg-color--white g-padding-x-10--xs g-padding-y-20--xs">
+                                    <h2 class="g-font-size-18--xs g-margin-b-5--xs text-uppercase">${course.display_name}</h2>
+                                    <span class="g-font-size-15--xs g-color--red">${course.levels}</span><br>
+                                    <span class="g-font-size-12--xs g-color--text">
+                                        ${course.short_description}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    % endif
+
+            % endfor
+
+                <a class="swiper-slide" href='/courses'>
+                    <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="s-team-v1">
+                            <img class="assets/img-responsive g-width-100-percent--xs" src="${static.url('assets/pattern-and-backgrounds/background-red.png')}" alt="Image">
+                            <div class="g-text-center--xs g-bg-color--white g-padding-x-30--xs g-padding-y-20--xs">
+                                <h2 class="g-font-size-18--xs g-margin-b-5--xs text-uppercase">View All Courses</h2>
+                                <span class="g-font-size-12--xs g-color--text">
+                                    Choose from all 60 courses that focus on enhancing all aspects of your teaching.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+             <!-- Arrows -->
+            <div class="g-font-size-22--xs g-color--sunset-orange js__swiper-courses g-text-center--xs"></div>
+            <!-- End Arrows -->
+
+        </div>
+        <!-- End Swiper Clients -->
+
+    </div>
+</div>
+
+<!-- Testimonials -->
+<div class="js__parallax-window index-testimonials" style="background-color: rgb(64, 214, 168);">
+    <div class="g-text-center--xs g-padding-y-30--xs g-padding-y-50--sm"><!-- remove container -->
+        <p class="text-uppercase g-font-size-28--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-50--xs">Testimonials</p>
+        <div class="s-swiper js__swiper-testimonials">
+            <!-- Swiper Wrapper -->
+            <div class="swiper-wrapper g-margin-b-50--xs">
+                <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
+                    <div class="g-padding-x-20--xs g-padding-x-50--lg">
+                        <div class="g-margin-b-40--xs">
+                            <p class="g-font-size-18--xs g-font-size-20--sm g-color--black-light"><i>" Firki has taught me many things but most importantly, it has taught me the importance of building strong relationships with my students. Inspired by Firki, I have started my own multimedia workshops. "</i></p>
+                        </div>
+                        <img src="${static.url('assets/img/testimonials/praveen.png')}">
+                        <h4 class="g-font-size-18--xs g-font-size-21--sm g-color--white  g-margin-b-5--xs">Praveen</h4>
+                        <h4 class="g-font-size-12--xs g-font-size-14--sm g-color--black-light  g-margin-b-5--xs">Sant Gadge Maharaj Secondary School, Pune Grades 8 and 9</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
+                    <div class="g-padding-x-20--xs g-padding-x-50--lg">
+                        <div class="g-margin-b-40--xs">
+                            <p class="g-font-size-18--xs g-font-size-20--sm g-color--black-light"><i>"Initially, I had many behavioral problems in class, but through Firki, I am trying new ways of teaching and can see my students responding to it well."</i></p>
+                        </div>
+                        <img src="${static.url('assets/img/testimonials/swathi.png')}">
+                        <h4 class="g-font-size-18--xs g-font-size-21--sm g-color--white  g-margin-b-5--xs">Swathi</h4>
+                        <h4 class="g-font-size-12--xs g-font-size-14--sm g-color--black-light  g-margin-b-5--xs">Vikas Vidhyalaya High School, Hyderabad Grade - 3</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
+                    <div class="g-padding-x-20--xs g-padding-x-50--lg">
+                        <div class="g-margin-b-40--xs">
+                            <p class="g-font-size-18--xs g-font-size-20--sm g-color--black-light"><i>"Firki came as great resource for the iTeach fellows. The interactive portal helped them think and experience classrooms in a different manner."</i></p>
+                        </div>
+                        <img src="${static.url('assets/img/testimonials/prashant.png')}">
+                        <h4 class="g-font-size-18--xs g-font-size-21--sm g-color--white  g-margin-b-5--xs">Prashant</h4>
+                        <h4 class="g-font-size-12--xs g-font-size-14--sm g-color--black-light  g-margin-b-5--xs">iTeach Fellowship Manager Pune</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- End Swipper Wrapper -->
+
+            <!-- Arrows -->
+            <div class="g-font-size-22--xs g-color--white-opacity js__swiper-fraction"></div>
+            <a href="javascript:void(0);" class="g-display-none--xs g-display-inline-block--sm s-swiper__arrow-v1--right s-icon s-icon--md ti-angle-right js__swiper-btn--next"></a>
+            <a href="javascript:void(0);" class="g-display-none--xs g-display-inline-block--sm s-swiper__arrow-v1--left s-icon s-icon--md ti-angle-left js__swiper-btn--prev"></a>
+            <!-- End Arrows -->
+        </div>
+    </div>
+</div>
+<!-- End Testimonials -->
+
+<a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>

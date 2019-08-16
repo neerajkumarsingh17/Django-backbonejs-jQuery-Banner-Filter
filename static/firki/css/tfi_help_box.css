@@ -1,0 +1,215 @@
+body #custom-need-help{
+  z-index: 990;
+  font-family: "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+}
+
+.custom-need-help{
+  position: fixed;
+  right: 10px;
+  bottom: -2px;
+  display: block;
+  text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
+
+}
+
+#custom-need-help.custom-help-collapsed{
+  width: 180px;
+  height: 30px;
+}
+
+#custom-need-help #custom-help-header {
+  height: auto;
+  padding: 6px 10px 10px 8px;
+  background-color: #01b4ca;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#custom-need-help.custom-help-collapsed #custom-help-header .help-minimize {
+  display: none;
+}
+#custom-need-help.custom-help-collapsed #custom-help-header .help-minimize, 
+#custom-need-help.custom-help-collapsed #custom-help-header .help-close {
+  float: right;
+  cursor: pointer;
+  position: relative;
+}
+
+#custom-need-help.custom-help-expanded #custom-help-header .help-minimize {
+  top: -5px;
+  display: block;
+}
+#custom-need-help.custom-help-expanded #custom-help-header .help-close {
+  display: none ! important;
+}
+
+#custom-need-help.custom-help-expanded #custom-help-header .help-minimize, 
+#custom-need-help.custom-help-expanded #custom-help-header .help-close {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 14px;
+  border-radius: 3px;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 20px;
+  
+}
+
+#custom-need-help.custom-help-expanded{
+  box-sizing: content-box;
+  width: 260px;
+  height: 270px;
+  z-index: 150;
+  border: 1px solid #01b4ca;
+  border-radius: 3px;
+  background: #fff;
+
+}
+
+
+#custom-need-help #custom-help-form, #custom-need-help .custom-help-success {
+min-height: 230px;
+  overflow: hidden;
+  clear: both;
+  background-color: #f3f3f3;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-top: none;
+  border-bottom: none;
+  text-align: left;
+}
+
+#custom-need-help #custom-help-form .custom-pre-form {
+  background-color: #fff;
+  height: 200px;
+  padding: 5px;
+}
+
+#custom-need-help #custom-help-form .custom-pre-form p{
+  font-size: 13px;
+  font-weight: 600;
+  color: #3c3c3c;
+  margin-bottom: 10px;
+}
+
+#custom-need-help #custom-help-form .lc-form-field-wrap {
+  margin: 0;
+  padding:0;
+  height: 145px;
+}
+
+#custom-need-help #custom-help-form .lc-form-field-wrap .lc-textfield-wrap {
+  position: relative;
+  margin: 3px 0 ;
+}
+
+#custom-need-help #custom-help-form .custom-pre-form ul li {
+  list-style: none;
+  padding: 0px;
+}
+
+#custom-need-help #custom-help-form .lc-form-field-wrap .lc-textfield-wrap label {
+  font-size: 13px;
+  padding: 0 2px;
+  background-color: #fff;
+  display: block;
+  z-index: 3;
+  height: 14px;
+  text-indent: 0;
+  font-weight: 500;
+  color: #3c3c3c;
+  font-style: normal;
+  text-align: left;
+  font-family: "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+
+#custom-need-help #custom-help-form .lc-form-field-wrap .lc-textfield-wrap input{
+    width: 100%;
+}
+
+#custom-need-help #custom-help-form .help-button-holder {
+  margin: 0 10px;
+}
+
+#custom-need-help #custom-help-form .help-button-submit {
+  cursor: pointer;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  padding: 6px 40px;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: none;
+  background: #777 url(https://d36mpcpuzc4ztk.cloudfront.net/images/begin_chat.png) no-repeat center;
+  border: 1px solid #666;
+  text-indent: -9999em;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+
+#custom-need-help .help-submit-loader{
+  height: 100%;
+  overflow: hidden;
+  clear: both;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-top: none;
+  border-bottom: none;
+  text-align: left;
+  background: #fff url('https://d36mpcpuzc4ztk.cloudfront.net/images/icons/lc-loader.svg') no-repeat center;
+}
+
+#custom-need-help .show-hide-load {
+  display: none;
+}
+
+#custom-need-help .help-error {
+    border: 1px solid red;
+    width: 100%;
+}
+
+#custom-need-help .help-error-msg {
+    color: red;
+    font-size: 10px;
+}
+
+#custom-need-help .custom-success-msg {
+    font-size: 15px;
+    font-weight: 400;
+    color: green;
+    margin-top: 15px;
+    padding: 10px;
+}
+#custom-need-help input[type="text"], #custom-need-help textarea{
+   background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.6),inset 0 0 3px 0 rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    font: normal 1em "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+    height: 34px;
+    padding: 5px 12px;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    font-size:13px;
+    width: 100%;
+
+}
+#custom-need-help textarea{  
+    height: 50px;
+
+}
+#custom-need-help input.help-error, #custom-need-help textarea.help-error{
+  border-color:red;
+}

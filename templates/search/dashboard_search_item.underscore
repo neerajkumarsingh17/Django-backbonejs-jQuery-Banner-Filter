@@ -1,0 +1,9 @@
+<div class="border-wrapper">
+<div class="result-excerpt"><%= excerpt %></div>
+<a class="result-link" href="<%- url %>"> <button class="btn">View </button></a>
+<div class="tfi-search-span-wrap">
+<span class="result-course-name"><%- course_name %>:</span>
+<span class="result-location"><%- location.join(' ▸ ') %></span>
+<span class="result-type"><%- content_type %></span>
+</div>
+</div>

@@ -1,0 +1,214 @@
+/*footer code*/
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/lato_2/Lato-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/lato_2/Lato-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Bold.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/lato_2/Lato-Black.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Black.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Black.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Black.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+.tfi-footer {
+    background-color: #333333;
+}
+
+.tfi.footer {
+    background-color: #333333;
+    padding-top: 10px !important;
+    padding-bottom: 55px !important;
+    /* TO DO TFI footer minimum content*/
+    /*    position: absolute;
+    width: 100%;*/
+}
+
+.tfi.footer .container.footer-align {
+    background: none;
+    padding: 0px;
+}
+
+.footer > .footer-align {
+    border: none;
+    /*width: 880px;*/
+    margin: 0px auto;
+}
+
+.footer-align .left {
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-align .right {
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    float: right;
+}
+
+.rhs-align {
+    width: 207px;
+    float: right;
+    margin-right: 160px;
+}
+
+h3.footer-heading {
+    font-family: 'Lato-Black' !important;
+    color: #aaaaaa !important;
+    font-Size: 18px !important;
+    margin-bottom: 15px;
+}
+
+.left > .footer-about-para {
+    font-family: 'Lato-Regular';
+    color: #737373;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 0px;
+    letter-spacing: 0px !important;
+    width: 79%;
+}
+
+.footer-central-logo {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.tfi ul.footerlist {
+    margin-bottom: 38px;
+}
+
+.tfi ul.footerlist > li {
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+.footerlist li a {
+    color: #737373;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.footerlist li a:hover,
+.footerlist li a:focus {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.footerlist li a.active {
+    color: #01b4ca;
+}
+
+
+/*new code*/
+
+.tfi.footer ul.socialicons {
+    list-style: none;
+    overflow: auto;
+    padding-left: 2px;
+    margin-top: 20px;
+}
+
+.tfi.footer ul.socialicons li {
+    width: 30px;
+    height: 30px;
+    margin: 0 9px 0 0;
+    float: left;
+}
+
+.tfi.footer ul.socialicons li a {
+    width: 28px;
+    height: 28px;
+    display: block;
+    background: url(../images/socialSprite.png) no-repeat;
+    transition: none;
+}
+
+.tfi.footer ul.socialicons li a.facebook {
+    background-position: 0px 0px;
+}
+
+.tfi.footer ul.socialicons li a.facebook:hover {
+    background-position: 0px -29px;
+    background-repeat: no-repeat;
+}
+
+.tfi.footer ul.socialicons li a.linkedin {
+    background-position: -31px 0px;
+}
+
+.tfi.footer ul.socialicons li a.linkedin:hover {
+    background-position: -31px -29px;
+    background-repeat: no-repeat;
+}
+
+.tfi.footer ul.socialicons li a.twitter {
+    background-position: -60px 0px;
+}
+
+.tfi.footer ul.socialicons li a.twitter:hover {
+    background-position: -60px -29px;
+    background-repeat: no-repeat;
+}
+
+
+/*end new code*/
+
+@media(max-width: 1024px) {
+    .footer > .footer-align {
+        /*width: 100%;*/
+        margin: 0px auto;
+    }
+    .tfi ul.footerlist > li {
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 990px) {
+    .footer-align .right {
+        float: left;
+    }
+}
+
+@media(max-width: 768px) {
+    .rhs-align {
+        float: left;
+    }
+}
+
+.tfi .container .row {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*end footer code*/

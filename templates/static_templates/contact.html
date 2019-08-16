@@ -1,0 +1,59 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+<%! 
+from django.utils.translation import ugettext as _ 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+%>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Contact")}</%block>
+
+<div class="tfi container">
+    <section class="tfi contactUsContent">
+        <h2 class="mainHeading">${_("Contact Us")}</h2>
+                <!--LHS-->
+                <div class="contactUs_width">
+                  <div class="sectionContent_row">
+                    <div class="sectionImg">
+                        <img src="${static.url('firki/images/contact/call.png')}">
+                    </div>
+                    <div class="sectionContent">
+                        <h3 class="sectionHeading contactHeading"><span class="color-skyblue">${_("Call us on")}</span></h3>
+                        <p>${_("+91 022 2518 5821")}</p>
+                    </div>
+                  </div>
+                  <!-- <div class="clearfix">&nbsp;</div> -->
+
+                  <div class="sectionContent_row">
+                    <div class="sectionImg">
+                        <img src="${static.url('firki/images/contact/email.png')}">
+                    </div>
+                    <div class="sectionContent">
+                        <h3 class="sectionHeading contactHeading"><span class="color-skyblue">${_("Email us on")}</span></h3>
+                        <p><a href="javascript:void(0)"><span class="color-pink">${_("contactfirki@teachforindia.org")}</span></a></p>
+                    </div>
+                  </div>
+                </div>
+                <!--end LHS-->
+
+                <!--RHS-->
+                <div class="contactUs_width right">
+                  <div class="sectionContent_row">
+                    <div class="sectionImg">
+                        <img src="${static.url('firki/images/contact/visit.png')}">
+                    </div>
+                    <div class="sectionContent">
+                        <h3 class="sectionHeading contactHeading"><span class="color-skyblue">${_("Visit Us")}</span></h3>
+                        <p>${_("Teach For India")}
+                        <br> ${_("Godrej One, 2nd Floor,")}
+                        <br> ${_("Eastern Express Highway,")}
+                        <br> ${_("Vikhroli East, Mumbai")}
+                        <br> ${_("Maharashtra 400079")}</p>
+                    </div>
+                  </div>
+                </div>
+                <!--end RHS-->
+    </section>
+ </div>

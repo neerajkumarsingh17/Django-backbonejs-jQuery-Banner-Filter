@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/lato_2/Lato-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/lato_2/Lato-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Bold.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/lato_2/Lato-Black.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Black.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Black.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Black.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+.banner {
+    min-height: 630px;
+    background: url(../images/firkiherosmaller.png)no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    overflow: hidden;
+}
+
+h4.banner-text {
+    font-family: 'Lato-Regular';
+    color: #fff;
+    font-size: 30px;
+    margin-top: 211px;
+    margin-bottom: 14px;
+}
+
+h2.banner-text {
+    font-family: 'Lato-Black';
+    color: #fff;
+    font-size: 72px;
+    line-height: 54px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.bannerText-yellow {
+    color: #ffd55e;
+}
+
+.bg-orange {
+    background-color: #ffd55e;
+}
+
+.bg-skyblue {
+    background-color: #01b4ca;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-grey {
+    background-color: #575757;
+}
+
+.bg-yellow {
+    background-color: #ffd55e;
+}
+
+.color-skyblue {
+    color: #01b4ca;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-yellow {
+    color: #ffd55e;
+}
+
+.color-pink {
+    color: #fd8b81;
+}
+
+.color-grey {
+    color: #575757;
+}
+
+.separator {
+    width: 78px;
+    height: 4px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.banner-btn {
+    font-family: 'Lato-Black';
+    line-height: 34px;
+    font-weight: normal;
+    color: #fff;
+    font-size: 18px;
+    background-color: #01b4ca;
+    border-radius: 5px;
+    border-bottom: 3px solid #018696;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 45px;
+    width: 260px;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    margin-top: 45px;
+}
+
+.banner-btn:focus {
+    outline: none;
+}
+
+.checkout-button {
+    color: #fff;
+    font-size: 18px;
+    background-color: #01b4ca;
+    border-radius: 5px;
+    border-bottom: 3px solid #018696;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 45px;
+    width: 260px;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    font-family: 'Lato-Black';
+    line-height: 34px;
+    font-weight: normal;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.banner-btn:hover,
+.banner-btn:focus,
+.checkout-button:hover,
+.checkout-button:focus,
+input[type="submit"]:hover:not(:disabled),
+input[type="button"]:hover:not(:disabled),
+button:hover:not(:disabled),
+.button:hover:not(:disabled) {
+    text-decoration: none;
+    color: #fff;
+    background-color: #01d9f4;
+    border-bottom: 3px solid #018696;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+    outline: none;
+}
+
+.checkout-button:active:hover {
+    color: #fff;
+    background-color: #01d9f4;
+    outline: none;
+}
+
+input[type="submit"]:hover:not(:disabled),
+input[type="button"]:hover:not(:disabled),
+button:hover:not(:disabled),
+.button:hover:not(:disabled) {
+    background-color: none;
+    background-image: none;
+    background-image: none;
+}
+
+.banner-btn:active:hover {
+    color: #fff;
+    background-color: #01d9f4;
+    outline: none;
+}
+
+.content {
+    padding-top: 72px;
+}
+
+.img-pattern-red {
+    background: url(../images/img-pattern-red.png)repeat;
+    background-position: top left;
+}
+
+.section-heading {
+    font-size: 32px;
+    font-family: 'Lato-Black';
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#about-firki,
+#portfolio {
+    min-height: 749px;
+}
+
+.firki-discription {
+    font-family: 'Lato-Bold';
+    font-size: 24px;
+    width: 50%;
+    float: none;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 40px;
+    line-height: auto;
+    text-transform: capitalize;
+}
+
+.about-desc {
+    margin-top: 51px;
+    padding-bottom: 72px;
+    text-align: center;
+}
+
+.about-desc p {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+    /*color: #58595b;*/
+    width: 85%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.img-pattern-red {
+    background: url(../images/img-pattern-red.png)repeat;
+    background-position: top left;
+}
+
+.img-pattern-grey {
+    background: url(../images/img-pattern-grey.png)repeat;
+    background-position: top left;
+}
+
+.portfolio-desc {
+    margin-top: 114px;
+    text-align: center;
+    padding-bottom: 72px;
+}
+
+.wrap-box-courses {
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 72px;
+}
+
+.portfolio-content,
+.course-content {
+    font-family: 'Lato-Bold';
+    font-size: 24px;
+    width: 60%;
+    float: none;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    line-height: 29px;
+}
+
+.course-content {
+    margin-top: 40px;
+}
+
+.portfolio-block {
+    min-height: 380px;
+    width: 280px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: none;
+    display: inline-block;
+    color: #fff;
+    background-color: #01b4ca;
+    font-size: 18px;
+    border-radius: 5px;
+    border-bottom: 4px solid #018696;
+    vertical-align: top;
+    position: relative;
+}
+
+.course-block {
+    min-height: 363px;
+    width: 247px;
+    margin-left: 27px;
+    margin-right: 27px;
+    float: none;
+    display: inline-block;
+    color: #fff;
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border-bottom: 4px solid #e1e1e1;
+    vertical-align: top;
+    position: relative;
+}
+
+.about-firki-block {
+    min-height: 392px;
+    width: 280px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-firki-block .rounded-img img {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#about-firki .container h4.section-heading {
+    width: 72%;
+    display: block;
+    float: none;
+    margin: 0px auto;
+}
+
+.portfolio-img {
+    margin-top: -60px;
+}
+
+.course-desc-img {
+    width: 247px;
+    height: 131px;
+    overflow: hidden;
+}
+
+.course-desc-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#courses-desc .course-block h4.course-category {
+    color: #575757;
+    font-size: 14px;
+    font-family: 'Lato-Black';
+    line-height: normal;
+    margin-bottom: 8px;
+    margin-top: 11px;
+    text-align: left;
+    padding: 0px 16px;
+}
+
+#courses-desc .course-block h3.course-name {
+    color: #01b4ca;
+    font-size: 24px;
+    font-family: 'Lato-Regular';
+    line-height: normal;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    text-align: left;
+    padding: 0px 16px;
+}
+
+#courses-desc .course-block .courses-text {
+    margin: 0px auto;
+    text-align: left;
+    font-size: 14px;
+    line-height: normal;
+    color: #575757;
+    font-family: 'Lato-Regular';
+    padding: 0px 16px 16px;
+}
+
+.portfolio-block .portfolio-img img {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.testmonial-desc {
+    width: 80%;
+    margin: 0px auto;
+    text-align: left;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 21px;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    left: 10%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.teachers-name {
+    font-family: 'Lato-Black';
+}
+
+#checkout-firki {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+@media(max-width: 768px) {
+    .portfolio-block {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* Custom css style */
+
+.row .disable-default-anchor-style {
+    text-decoration: none;
+}

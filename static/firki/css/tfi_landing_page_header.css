@@ -1,0 +1,279 @@
+/*header code*/
+
+#masthead {
+    position: absolute;
+    width: 100%;
+    font-family: 'Lato-Black';
+    font-weight: normal;
+}
+
+#masthead.affix {
+    position: fixed;
+    top: -60px;
+    z-index: 10;
+    max-height: 64px;
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+    transform: translateY(60px);
+}
+
+.navbar-default {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.headerWhiteBg {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.navbar:before,
+.navbar:after {
+    content: " ";
+    display: table;
+}
+
+#masthead.affix #navbar-container {
+    padding: 0px 0px 0px 3px;
+}
+
+.navbar-default .navbar-brand {
+    color: #777777;
+}
+
+#masthead.affix .site-logo img {
+    display: block;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 4px 9px;
+    font-size: 19px;
+    line-height: 21px;
+    height: auto;
+}
+
+#masthead.affix #primary-menu-container {
+    float: right;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    float: right;
+    margin: 0 -3px 0 0;
+}
+
+#masthead #primary-menu-container a {
+    padding: 0px 20px 0px 20px;
+    border-right: 2px solid #d0d2d3;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #01b4ca;
+    font-size: 18px;
+    padding: 14px 10px 10px 6px;
+    line-height: 40px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #01d9f4;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+    outline: none;
+}
+
+#masthead #primary-menu-container .user-menu a {
+    padding: 0px 20px 0px 45px;
+}
+
+.navbar-default .navbar-nav > li > a > button {
+    font-family: 'Lato-Black';
+    color: #fff;
+    font-size: 17px;
+    background-color: #01b4ca;
+    border-radius: 5px;
+    border-bottom: 3px solid #018696;
+    height: 33px;
+    padding: 5px 22px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a > button:hover,
+.navbar-default .navbar-nav > li > a > button:active,
+.navbar-default .navbar-nav > li > a > button:focus {
+    background: #01d9f4;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+}
+
+.navbar-default .navbar-nav > li > a > button:focus {
+    background: #01d9f4;
+}
+
+.navbar-default .navbar-nav > li > a > button:active:hover {
+    color: #fff;
+    outline: none;
+    border-bottom: 3px solid #018696;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+}
+
+
+}
+input[type="submit"]:active:not(:disabled),
+input[type="submit"]:focus:not(:disabled),
+input[type="button"]:active:not(:disabled),
+input[type="button"]:focus:not(:disabled),
+button:active:not(:disabled),
+button:focus:not(:disabled),
+.button:active:not(:disabled),
+.button:focus:not(:disabled) {
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.button {
+    text-shadow: none;
+}
+.navbar-default .navbar-nav > li > a.dropdown-toggle {
+    font-family: 'Lato-Regular';
+    background-color: #01b4ca;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border-bottom: 3px solid #018696;
+    font-weight: normal;
+}
+.navbar-default .navbar-nav > li.dropdown > a {
+    color: #01b4ca;
+    font-size: 18px;
+    line-height: 25px;
+    border-bottom: 3px solid #018696;
+    font-weight: normal;
+    font-family: 'Lato-Black';
+    color: #fff;
+    font-size: 17px;
+    background-color: #01b4ca;
+    border-radius: 5px;
+    height: 33px;
+    padding: 3px 22px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    text-transform: uppercase;
+    margin: 16px 0px 0px 6px;
+    display: inline-block;
+    float: left;
+}
+.navbar-default .navbar-nav > li.dropdown > a.user {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #01b4ca;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li.dropdown > a.user:hover {
+    background: #01d9f4;
+}
+.navbar-default .navbar-nav > li.dropdown > a.arrow {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.navbar-default .navbar-nav > li.dropdown > a.dropdown-toggle {
+    width: auto;
+    padding: 0px 2px 0px 0px;
+    margin: 16px 0px 0px 0px;
+    height: 33px;
+    line-height: 30px;
+}
+.navbar-default .navbar-nav > li.dropdown > a.dropdown-toggle:focus,
+.navbar-default .navbar-nav > li.dropdown > a.dropdown-toggle:hover {
+    background: #01d9f4;
+    color: #fff;
+}
+.dropdown-arrow {
+    width: 33px;
+    border-left: 1px solid #018696;
+    display: inline-block;
+    margin-left: 0px;
+}
+.dropdown-arrow > .caret {
+    margin-left: 12px;
+    border-top: 6px dashed;
+}
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu {
+    width: 100%;
+    background-color: #01b4ca;
+    padding: 0px 0px;
+    border-radius: 5px;
+    min-width: auto;
+}
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a:hover,
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a:focus {
+    background-color: #018696;
+    outline: none;
+}
+
+/*new*/
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li.first a:hover,
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li.first a:focus {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li.last a:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*end new*/
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Lato-Black';
+}
+.navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a.dropdown-toggle.arrow {
+    padding: 0;
+}
+#masthead #smallfirkilogo {
+    display: none;
+    width: 112px;
+    height: 58px;
+}
+#masthead #largefirkilogo {
+    width: 180px;
+    height: 105px;
+}
+
+/*end header code*/

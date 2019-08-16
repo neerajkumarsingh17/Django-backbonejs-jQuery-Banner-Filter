@@ -1,0 +1,310 @@
+/* Links */
+a {
+  color: #494a4a;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.s-header__buttons {
+    width: 45%;
+}
+
+.s-header__buttons ul{
+    display: inline-flex;
+    list-style: none;
+    float: right;
+    margin-top: 0.75rem;
+}
+
+.s-header__buttons ul li{
+    margin-right: 15px;
+}
+
+.s-header__logo {
+    float: left;
+    width: 47%;
+}
+
+.s-header__buttons ul li a.notification{
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    padding: 10px 12px 10px 12px;
+    border-radius: 38px;
+}
+
+.s-header__buttons ul li a.theme-btn.active{
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    padding: 8px 15px 10px 15px;
+    border-radius: 38px;
+    color: #FFF;
+    background-color: rgb(0, 181, 202);
+}
+
+.slider-btn{
+    padding: 10px 25px 10px 25px;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.g-color--gold{
+    color: color: rgb(172, 133, 44);
+}
+
+.g-color--black{
+    color: #000;
+}
+
+.g-bg-color--goldenrod{
+    background-color:rgb(255, 210, 95)
+}
+
+.g-bg-color--mine-shaft{
+    background-color:rgb(48, 48, 48);
+}
+
+.content-btn {
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    background-color: rgb(0, 181, 202);
+    border-radius: 25px;
+    border: 0px;
+}
+
+.index-courses{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(241, 242, 226);
+}
+
+.index-courses .s-team-v1{
+    max-height: 417px;
+    overflow: hidden;
+}
+
+.g-padding-t-25--xs, .g-padding-t-25--sm{
+    padding-top: 1.5625rem;
+}
+
+.index-testimonials img{
+    width: 108px;
+    height: 108px;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+footer .social-icons a{
+    border: 2px solid;
+    padding: 8px 8px 8px 10px;
+    border-radius: 51px;
+    margin-right: 15px;
+    color:#FFF;
+    font-size: 24px;
+}
+
+footer .social-icons a:last-child{
+    padding: 8px 12px 8px 10px;
+}
+
+footer .social-icons a:first-child{
+    padding: 8px 8px 8px 10px;
+}
+
+footer .social-icons a:hover{
+    color: #13b1cd;
+   -moz-box-shadow:    inset 0 0 10px #13b1cd;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #13b1cd;
+}
+
+.green-circle{
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    border: 0.11em solid #000;
+    background: green;
+    height: 9px;
+    width: 9px;
+    border-radius: 18px;
+}
+
+@media (max-width: 32em) {
+
+    .s-header__buttons ul li:first-child, .s-header__buttons ul li:last-child{
+        display: none;
+    }
+
+    .s-header__buttons{
+        width: 40%;
+    }
+
+    header.navbar-fixed-top {
+        background: transparent;
+    }
+
+    .s-header__logo {
+        float: left;
+        width: 44%;
+    }
+
+    .g-padding-y-20--smm {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .g-padding-x-20--smm {
+        text-align: center;
+    }
+
+    .s-header__buttons ul {
+        display: -webkit-inline-box;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .s-header__buttons ul li{
+        margin-right: 2px;
+    }
+
+    .s-header__buttons ul li a.theme-btn.active{
+        width: 25px;
+        height: 24px;
+        border: 2px solid;
+        padding: 6px 10px 6px 10px;
+        border-radius: 38px;
+        color: #FFF;
+        background-color: rgb(0, 181, 202);
+    }
+
+    footer div.social-icons, footer div h4.g-text-center--sm{
+        text-align: center;
+    }
+
+    .fill, .fill .g-media__body{
+        padding-right: 1rem;
+    }
+
+    .index-courses .s-swiper .swiper-wrapper .swiper-slide:first-child{
+        margin-left: -15px;
+    }
+    .index-courses .s-swiper .swiper-wrapper .swiper-slide{
+        margin-right: 10px;
+    }
+
+    .g-margin-b-20--sm{
+        margin-bottom: 1.25rem;
+    }
+
+    header.s-header__shrink{
+        /*margin-top: 1.5rem;*/
+        -webkit-backface-visibility: hidden;
+    }
+
+    .row{
+        margin-right: 0px;
+    }
+
+}
+
+footer{
+    border-top: 1px  #CCC solid;
+    box-shadow: 
+        inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC; 
+}
+
+.about-banner {
+    position: relative;
+    z-index: 1;
+}
+
+.about-banner .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../pattern-and-backgrounds/background_gray.jpg') center center;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+
+.about-box>div{
+    display: flex;
+}
+
+.about-box>div>div{
+    align-items: stretch;
+}
+
+
+.about-banner-2 {
+    position: relative;
+    z-index: 1;
+}
+
+.about-banner-2 .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/about-us-banner-2.jpg') center center;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+
+.g-margin-minus-1{
+    padding: 0px !important;
+    margin: -1rem !important;
+}
+
+.g-bg-color--firki-bg{
+    background-color: rgb(241, 242, 226);
+}
+
+.g-bg-color--firki-faq{
+    background-image: url('../pattern-and-backgrounds/background-green.png');
+}
+
+.s-faq .cbp .cbp-item{
+    background-color: #FFF;
+    margin-bottom: 15px;
+    position: relative;
+    top:0px !important;
+}
+
+.s-faq .cbp{
+    height: 100% !important;
+}
+
+.s-faq .cbp-wrapper, .cbp-wrapper-helper{
+    position: relative !important;
+}
+
+.s-faq .cbp .cbp-item .cbp-caption-activeWrap{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.how-it-works .s-team-v1 div{
+    min-height: 330px;
+}

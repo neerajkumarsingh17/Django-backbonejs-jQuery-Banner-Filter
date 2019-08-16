@@ -1,0 +1,59 @@
+ .tfi.contactUsContent {
+     width: 805px;
+     margin-left: 235px;
+     margin-top: 61px;
+     padding-bottom: 140px;
+ }
+ 
+ .tfi h3.sectionHeading.contactHeading {
+     padding-top: 3px;
+     padding-bottom: 4px
+ }
+ 
+ .tfi .contactUs_width {
+     float: left;
+     width: 310px;
+     margin-top: 17px;
+ }
+ 
+ .tfi .contactUs_width.right {
+     margin-left: 95px;
+ }
+ 
+ .tfi .sectionContent_row:first-child {
+     margin-bottom: 35px;
+     clear: both;
+     display: table;
+ }
+ 
+ .tfi .sectionImg {
+     width: 55px;
+     float: left;
+ }
+ 
+ .tfi .sectionContent {
+     float: left;
+     margin-left: 20px;
+ }
+ 
+ .tfi .sectionContent p {
+     font-family: 'Lato-Regular';
+     margin-bottom: 3px;
+    line-height: 20px;
+ }
+ 
+ .tfi .sectionContent p a span {
+     text-decoration: underline;
+ }
+ 
+ .tfi .sectionContent p a span:hover {
+     text-decoration: underline;
+ }
+@media(max-width: 800px) {
+    .tfi.contactUsContent {
+        width: 100% !important;
+        margin-left: 0px;
+        padding: 0px 15px;
+        padding-bottom: 140px;
+    }
+}

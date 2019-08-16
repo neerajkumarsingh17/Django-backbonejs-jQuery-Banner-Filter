@@ -1,0 +1,112 @@
+.tfi h3.sectionHeading span {
+    font-family: 'Lato-Black';
+}
+
+.tfi h3.sectionHeading.whosItFor,
+.tfi h3.sectionHeading.howDoesItWork {
+    padding-top: 25px;
+}
+
+.tfi h3.sectionHeading.forTeachers {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tfi h3.sectionHeading.schoolLeaders {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tfi h3.sectionHeading.partners {
+    padding-top: 19px;
+    padding-bottom: 22px;
+}
+
+.tfi .pageContentPara.organization {
+    padding-top: 19px;
+}
+
+.tfi .organizations {
+    width: 100%;
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.tfi .organizations .organizations-division {
+    width: 270px;
+    float: left;
+    margin-left: 0px;
+}
+
+.content-wrapper.tfi-content-wrapper .tfi.container .tfi.mainContent .cleardiv {
+    clear: both;
+    min-height: 20px;
+    display: block
+}
+
+.tfi .about-mid-images {
+    width: 275px;
+    float: left;
+}
+
+.tfi .about-mid-images.left {
+    margin-left: 0px;
+}
+
+.tfi .about-mid-images.right {
+    margin-left: 20px;
+}
+
+.tfi .organizations .organizations-division:nth-child(2),
+.tfi .about-mid-images:nth-child(2) {
+    margin-left: 20px;
+}
+
+.tfi .about-mid-images .media {
+    overflow: inherit;
+}
+
+.tfi .about-mid-images .media .media-left {
+    padding-right: 18px;
+}
+
+.tfi .about-mid-images .media .media-body p {
+    font-size: 14px;
+    font-family: "Lato-Regular";
+    color: #58595b;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+
+.tfi .about-mid-images .media .media-body h4.media-heading {
+    font-family: 'Lato-Black';
+    font-size: 14px;
+    color: #58595b;
+    margin-bottom: 7px;
+}
+
+.tfi .about-mid-images .media .media-left a img {
+    width: 85px;
+    height: 85px;
+    cursor: default;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.tfi .organization-img img:nth-child(2) {
+    margin-left: 50px;
+}
+
+.tfi .organization-img img.tfi-enfold {
+    margin-top: 20px;
+}
+
+@media(max-width: 800px) {
+    .tfi .organizations .organizations-division {
+        width: 47%;
+    }
+}

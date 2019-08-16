@@ -1,0 +1,172 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+<%! 
+from django.utils.translation import ugettext as _ 
+%>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+<link href="${static.url('assets/css/red-theme.css')}" rel="stylesheet" type="text/css"/>
+
+<div class="about-banner">
+    <div class="bg"></div>
+    <div class="g-container--sm g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+        <div class="g-margin-t-30--xs">
+            <h2 class="text-uppercase g-font-size-32--xs g-font-size-36--sm g-letter-spacing--1 g-color--sunset-orange">Firki is India’s first<br> online teacher education platform. It’s free! </h2>
+        </div>
+    </div>
+</div>
+
+<!--========== PAGE CONTENT ==========-->
+<!-- Features -->
+<div id="js__scroll-to-section" class="g-padding-y-0--xs g-padding-y-0--sm about-box">
+    <div class="row g-margin-b-0--xs g-margin-b-0--md g-margin-t-0--xs g-margin-t-0--md g-bg-color--mine-shaft">
+        <div class="padding-x-60--xs g-padding-x-80--sm col-sm-6 g-margin-b-0--md g-bg-color--gray-light  g-padding-y-20--xs g-padding-y-30--sm g-padding-x-20--smm wow fadeInRight" data-wow-duration=".3" data-wow-delay=".3s">
+            <div class="clearfix">
+                <div class="g-media__body">
+                    <h2 class="text-uppercase g-color--sunset-orange g-text-center--xs">What is firki?</h2>
+                    <p class="g-margin-b-0--xs g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--black g-text-center--xs">Through a blended (online and offline) learning model, Firki (an initiative by Teach For India) focuses on the principles and strategies, which have proven successful in improving teacher competencies in low-resource communities. Through courses, webinars, learning groups, one-on-one mentor support and classroom observation and feedback, Firki helps teachers identify their strengths and leverage them to build an effective practice, leading to improved student outcomes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="padding-x-60--xs g-padding-x-80--sm col-sm-6 g-margin-b-0--md g-bg-color--sunset-orange  g-padding-y-20--xs g-padding-y-30--sm g-padding-x-20--smm wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s>
+            <div class="clearfix">
+                <div class="g-media__body">
+                    <h2 class="text-uppercase g-color--white g-text-center--xs">Who is it for?</h2>
+                    <p class="g-margin-b-0--xs g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--black g-text-center--xs">
+                    <span class="text-uppercase g-font-size-20--xs g-font-size-20--sm g-font-size-20--md">Firki is for you!</span><br>
+                    Firki is for any educator who wants to learn, is committed to providing the best opportunities for each of their students and most importantly loves to teach! Our platform is used by K-12 teachers, community learning programs, NGOs and International Foundations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end row  -->
+</div>
+<!-- End Features -->
+
+<div class="about-banner-2">
+    <div class="bg"></div>
+    <div class="g-container--sm g-text-center--xs g-padding-y-50--xs g-padding-y-80--sm">
+        <div class="g-margin-t-30--xs">
+            <h2 class="text-uppercase g-font-size-32--xs g-font-size-36--sm g-letter-spacing--1 g-color--sunset-orange wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">Make your teaching and <br> learning experience fun!</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Features -->
+<div id="js__scroll-to-section" class="g-padding-y-0--xs g-padding-y-0--sm about-box">
+    <div class="row g-margin-b-0--xs g-margin-b-0--md g-bg-color--mine-shaft">
+        <div class="padding-x-60--xs g-padding-x-80--sm col-sm-6 g-margin-b-0--md g-bg-color--sunset-orange  g-padding-y-20--xs g-padding-y-30--sm g-padding-x-20--smm wow fadeInRight" data-wow-duration=".3" data-wow-delay=".3s">
+            <div class="clearfix">
+                 <div class="g-media__body text-center">
+                    <div style="padding: 0.75rem 0rem 0.75rem 0rem;">
+                        <img src="${static.url('assets/img/track-progress.png')}" width="90" height="90">
+                    </div>
+                    <h2 class="text-uppercase g-color--white g-text-center--xs">Track Progress</h2>
+                    <p class="g-margin-b-0--xs g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--black g-text-center--xs">
+                        Firki offers an automated system that allows you to track and analyze your progress, contribution, and learning. Make your teaching and learning experience fun!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="padding-x-60--xs g-padding-x-80--sm col-sm-6 g-margin-b-0--md g-bg-color--sky-blue  g-padding-y-20--xs g-padding-y-30--sm g-padding-x-20--smm wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+            <div class="clearfix">
+                 <div class="g-media__body text-center">
+                    <p class="ff g-color--dark-light ff-icon-user-chat g-font-size-85--xs g-font-size-90--sm g-margin-minus-1"></p>
+                    <h2 class="text-uppercase g-color--white g-text-center--xs">Share and Collaborate</h2>
+                    <p class="g-margin-b-0--xs g-font-size-20--xs g-font-size-20--sm g-font-size-20--md g-color--black g-text-center--xs">
+                       Leverage the webinars and learning groups to share and collaborate with peers and experts from the field of education.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // end row  -->
+</div>
+
+<!-- End Features -->
+<div class="g-bg-color--firki-bg g-margin-b-50--xs g-margin-b-50--sm how-it-works">
+
+    <div class="container">
+
+        <div class="g-text-center--xs g-padding-y-50--xs g-padding-y-50--sm">
+            <h2 class="g-font-size-32--xs g-font-size-36--md text-uppercase g-color--sunset-orange">How it works?</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-xs-6 g-full-width--xs g-padding-x-30--sm g-padding-x-30--xs">
+                <div class="wow fadeInUp animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <!-- Team -->
+                    <div class="s-team-v1">
+                        <h4 class="g-text-center--xs text-uppercase">For Teachers</h4>
+                        <img class="img-responsive g-width-100-percent--xs" src="${static.url('assets/img/course1.jpg')}" alt="Image">
+                        <div class="g-text-left--xs g-bg-color--white g-padding-x-10--xs g-padding-y-15--xs">
+                            <ul>
+                                <li>Log in with a simple sign-up form.</li>
+                                <li>Choose any course</li>
+                                <li>Watch a plethora of videos and webinars</li>
+                                <li>Learn different strategies </li>
+                                <li>Reflect on your own teaching experience</li>
+                                <li>Practice quizzes on what you have learned</li>
+                                <li>Track your progress</li>
+                                <li>Earn points and badges</li>
+                                <li>Share it with teachers from your school</li>
+                                <li>Work together as a team to improve classroom practice.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Team -->
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 g-full-width--xs g-padding-x-30--sm g-padding-x-30--xs">
+                <div class="wow fadeInUp animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <!-- Team -->
+                    <div class="s-team-v1">
+                        <h4 class="g-text-center--xs text-uppercase">For Mentors (School Leaders)</h4>
+                        <img class="img-responsive g-width-100-percent--xs" src="${static.url('assets/img/course2.jpg')}" alt="Image">
+                        <div class="g-text-left--xs g-bg-color--white g-padding-x-10--xs g-padding-y-15--xs">
+                            <ul>
+                                <li>Log in with a simple sign up form</li>
+                                <li>Firki to create a closed learning group your teachers</li>
+                                <li>Be involved in your Teachers performance</li>
+                                <li>Read their reflections and track progress</li>
+                                <li>Find the right areas to give constructive feedback</li>
+                                <li>Improve teaching practice </li>
+                                <li>Build a school culture of excellence.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Team -->
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6 g-full-width--xs g-padding-x-30--sm g-padding-x-30--xs">
+                <div class="wow fadeInUp animated" data-wow-duration=".3" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <!-- Team -->
+                    <div class="s-team-v1">
+                        <h4 class="g-text-center--xs text-uppercase">For Teacher Education Organizations</h4>
+                        <img class="img-responsive g-width-100-percent--xs" src="${static.url('assets/img/course3.jpg')}" alt="Image">
+                        <div class="g-text-left--xs g-bg-color--white g-padding-x-10--xs g-padding-y-15--xs">
+                            <ul>
+                                <li>Log in with a simple sign up form</li>
+                                <li>Use Firki to leverage technology efficiently to roll out your Teacher support and development.</li>
+                                <li>Work closely with our Course Design team</li>
+                                <li>Transform your content an effective online learning experience</li>
+                                <li>Reach out to more teachers with existing resources</li>
+                                <li>If you would like to use Firki as your program platform send us an e-mail</li>
+                                <a href="#" >contactfirki@teachforindia.org</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Team -->
+                </div>
+            </div>
+        </div>
+
+        <div class="g-text-center--xs g-padding-y-20--xs g-padding-y-20--sm">
+            <h2 class="g-font-size-16--xs g-font-size-18--md text-uppercase g-color--sunset-orange">If you would like to use Firki as your program platform send us an e-mail<br>
+            <a href="mailto:contactfirki@teachforindia.org" class="g-color--sunset-orange">contactfirki@teachforindia.org</a></h2>
+        </div>
+
+    </div>
+</div>
+<!--========== END PAGE CONTENT ==========-->

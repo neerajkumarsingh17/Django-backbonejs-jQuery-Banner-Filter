@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/lato_2/Lato-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Regular.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/lato_2/Lato-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Bold.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../fonts/lato_2/Lato-Black.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/lato_2/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/lato_2/Lato-Black.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/lato_2/Lato-Black.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/lato_2/Lato-Black.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+
+/*html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}*/
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+    /* TO DO TFI footer minimum content*/
+    /*min-height: auto;*/
+}
+
+.tfi.mainContent {
+    width: 580px;
+    margin-left: 235px;
+    margin-top: 61px;
+    padding-bottom: 140px;
+}
+
+.content-wrapper.tfi-content-wrapper#content > .tfi.container {
+    padding: 0px 0px;
+    min-height: 451px;
+}
+
+.tfi h2.mainHeading {
+    font-family: 'Lato-Black';
+    color: #58595b;
+    font-size: 32px;
+    padding-top: 68px;
+    margin-bottom: 28px;
+    margin-top: 0px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.tfi .pageContentPara {
+    font-family: 'Lato-Regular';
+    color: #58595b;
+    font-size: 14px;
+    padding: 12px 0;
+    margin: 0px;
+    line-height: 20px;
+}
+
+.tfi .hr-separator {
+    width: 78px;
+    height: 4px;
+    background-color: #01b4ca;
+    display: block;
+    clear: both;
+    margin: 12px 0px;
+}
+
+.tfi h3.sectionHeading {
+    color: #58595b;
+    font-family: 'Lato-Black';
+    font-size: 18px;
+    margin-top: 0px;
+    padding-top: 12px;
+    margin-bottom: 0px;
+    padding-bottom: 12px;
+    line-height: 16px;
+}
+
+.color-skyblue {
+    color: #01b4ca;
+}
+
+.color-pink {
+    color: #fd8b81;
+}
+
+.tfi .organizations .organizations-division {
+    width: 279px;
+    float: left;
+}
+
+.tfi .organizations .organizations-division:nth-child(2) {
+    margin-left: 20px;
+}
+
+.tfi .organization-img img:nth-child(2) {
+    margin-left: 50px;
+}
+
+
+/* FIX for all content in edx for fix postion header*/
+
+.content-wrapper.tfi-content-wrapper {
+    margin-top: 66px;
+    min-height: 410px;
+}
+
+.view-courseware > .window-wrap .content-wrapper.tfi-content-wrapper,
+.view-wiki > .window-wrap .content-wrapper.tfi-content-wrapper,
+.view-progress > .window-wrap .content-wrapper.tfi-content-wrapper,
+.discussion > .window-wrap .content-wrapper.tfi-content-wrapper,
+.view-instructordash > .window-wrap .content-wrapper.tfi-content-wrapper {
+    padding-bottom: 144px;
+    min-height: auto;
+}
+
+#courseware-search-bar .search-field-wrapper #course-search-input.search-field {
+    height: 35px;
+}
+
+#courseware-search-bar .search-field-wrapper #course-search-input.search-field:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #01b4ca;
+}
+#courseware-search-bar .search-field-wrapper button.search-button{
+    height: 35px;
+}
+#courseware-search-bar .search-field-wrapper button.cancel-button{
+    color: #f16b5f;
+    vertical-align: text-top;
+}
+#courseware-search-bar .search-field-wrapper button.cancel-button i {
+    color: #f16b5f;
+    vertical-align: text-top;
+}
+
+
+/*for completed password reset page*/
+
+.view-passwordreset .content-wrapper.tfi-content-wrapper .tfi-password-complete {
+    padding: 0px;
+}
+
+.view-passwordreset .content-wrapper.tfi-content-wrapper .tfi-password-complete .content {
+    margin: 0px;
+    width: 100%;
+}
+
+.view-passwordreset .content-wrapper.tfi-content-wrapper .tfi-password-complete h2.mainHeading.tfi-password-reset-complete {
+    font-family: 'Lato-Black';
+    color: #58595b;
+    font-size: 32px;
+    padding-top: 68px;
+    margin-bottom: 28px;
+    margin-top: 0px;
+    line-height: 26px;
+    text-transform: none;
+}
+
+.view-passwordreset .content-wrapper.tfi-content-wrapper .tfi-password-complete .content p {
+    font-family: 'Lato-Regular';
+    color: #575757;
+    font-size: 23px;
+}
+
+.view-passwordreset .content-wrapper.tfi-content-wrapper .tfi-password-complete .content p a:hover,
+.view-passwordreset .content-wrapper.tfi-content-wrapper .tfi-password-complete .content p a:focus {
+    outline: none;
+    border: none;
+}
+
+
+/*end for completed password reset page*/
+
+/* Fix z-index issue in image explorer xblock */
+.view-courseware.courseware .image-explorer-hotspot-reveal {
+    z-index: 10;
+}
+
+.view-courseware.courseware .xmodule_display.xmodule_SequenceModule nav.sequence-bottom {
+    z-index: 9;
+}
+
+/* firki_expire_update_link.html Already updated firki account page */
+
+h2.firki-activated_account {
+    font-family: 'Lato-Black';
+    color: #58595b;
+    font-size: 24px;
+    padding-top: 68px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: normal;
+    text-transform: none;
+    letter-spacing:0px; 
+    font-weight: normal;
+}
+
+.tfi a.firki-update-no-text-decoration:hover {
+    text-decoration: none;
+}
+
+/* end Already updated firki account page */
+
+/*.ltr.view-incourse.view-courseware.courseware {
+    position: relative;
+}
+
+.ltr.view-incourse.view-courseware.courseware .container-fluid.tfi.footer{
+position: absolute;
+width:100%;
+bottom:0;
+top:auto;
+}*/
+
+@media(max-width: 800px) {
+    .tfi.mainContent {
+        width: 100% !important;
+        margin-left: 0px;
+        padding: 0px 15px;
+        padding-bottom: 140px;
+    }
+}
+
+/*Mahendra Chaudhari*/
+.courses-container.tfi .courses{
+    padding: 0px 0px 32px 0px !important;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 2px 6.86px 0.14px rgba(0, 0, 0, 0.27);
+}
+.courses-container.tfi .courses ul.courses-listing li.courses-listing-item{
+    width: 250px !important;
+    min-height: 395px !important;
+    border-left: 1px solid #898989;
+    border-top: 1px solid #898989;
+    border-right: 1px solid #898989;
+    border-bottom: 2px solid #01b4ca;
+    float: left;
+    margin-left: 32px !important;
+    margin-right: 0px !important;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}

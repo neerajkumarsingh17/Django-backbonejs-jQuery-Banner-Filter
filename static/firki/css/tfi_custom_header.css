@@ -1,0 +1,423 @@
+/*header code*/
+
+
+#masthead {
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Lato-Black';
+}
+
+#masthead.affix {
+    position: fixed;
+    top: -60px;
+    z-index: 999;
+    max-height: 64px;
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+    transform: translateY(60px);
+}
+
+#masthead.tfi .main-navigation .navbar-default {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.tfi #navbar-container.container> div {
+    border: none;
+    display: block;
+}
+
+.tfi .headerWhiteBg {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tfi .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.tfi .navbar:before,
+.tfi .navbar:after {
+    content: " ";
+    display: table;
+}
+
+#masthead.affix #navbar-container {
+    padding: 0px 0px 0px 3px;
+}
+
+.tfi .navbar-default .navbar-brand {
+    color: #777777;
+}
+
+#masthead.affix .site-logo img {
+    display: block;
+}
+
+.tfi .navbar-brand {
+    float: left;
+    padding: 4px 9px;
+    font-size: 19px;
+    line-height: 21px;
+    height: auto;
+}
+
+#masthead.affix #primary-menu-container {
+    float: right;
+    margin-top: 10px;
+}
+
+.tfi .navbar-nav {
+    float: right;
+    margin: 0 -3px 0 0;
+}
+
+#masthead.tfi #primary-menu-container a {
+    padding: 0px 20px 0px 20px;
+    border-right: 2px solid #d0d2d3;
+}
+
+.tfi .navbar-default .navbar-nav > li > a {
+    color: #01b4ca;
+    font-size: 18px;
+    padding: 14px 10px 10px 6px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Lato-Black';
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+}
+
+.tfi .navbar-default .navbar-nav > li > a:hover,
+.tfi .navbar-default .navbar-nav > li > a:focus {
+    color: #01d9f4;
+    outline: none;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+}
+
+#masthead #primary-menu-container .user-menu a {
+    padding: 0px 20px 0px 45px;
+}
+
+.tfi .navbar-default .navbar-nav > li > a > button {
+    font-family: 'Lato-Black';
+    color: #fff;
+    font-size: 17px;
+    background-color: #01b4ca;
+    border-radius: 5px;
+    border-bottom: 3px solid #018696;
+    height: 33px;
+    padding: 5px 22px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    text-transform: uppercase;
+    box-shadow: none;
+    letter-spacing: 0px;
+}
+
+.tfi .navbar-default .navbar-nav > li > a > button:hover {
+    background: #01d9f4;
+    color: #fff;
+    box-shadow: none;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+}
+.tfi .navbar-default .navbar-nav > li > a > button:focus {
+outline: none;
+}
+
+.tfi .navbar-default .navbar-nav > li > a > button:active:hover {
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    border-bottom:3px solid #018696;
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+}
+
+.tfi input[type="submit"]:active:not(:disabled),
+.tfi input[type="submit"]:focus:not(:disabled),
+.tfi input[type="button"]:active:not(:disabled),
+.tfi input[type="button"]:focus:not(:disabled),
+.tfi button:active:not(:disabled),
+.tfi button:focus:not(:disabled),
+.tfi .button:active:not(:disabled),
+.tfi .button:focus:not(:disabled) {
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+}
+
+.tfi input[type="submit"],
+.tfi input[type="button"],
+.tfi button,
+.tfi .button {
+    text-shadow: none;
+}
+
+.tfi .navbar-default .navbar-nav > li > a.dropdown-toggle {
+    font-family: 'Lato-Regular';
+    background-color: #01b4ca;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border-bottom: 3px solid #018696;
+    font-weight: normal;
+    box-shadow: none;
+}
+
+
+/*Dropdown new code*/
+
+.navbar-default .navbar-nav > li.dropdown > a {
+    color: #01b4ca;
+    font-size: 18px;
+    line-height: 25px;
+    border-bottom: 3px solid #018696;
+    font-weight: normal;
+    font-family: 'Lato-Black';
+    color: #fff;
+    font-size: 17px;
+    background-color: #01b4ca;
+    border-radius: 5px;
+    height: 33px;
+    padding: 3px 22px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    text-transform: uppercase;
+    margin: 16px 0px 0px 6px;
+    display: inline-block;
+    float: left;
+}
+
+.navbar-default .navbar-nav > li.dropdown > a.user {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #01b4ca;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li.dropdown > a.user:hover {
+    background: #01d9f4;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li.dropdown > a.arrow {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.navbar-default .navbar-nav > li.dropdown > a.dropdown-toggle {
+    width: auto;
+    padding: 0px 2px 0px 0px;
+    margin: 16px 0px 0px 0px;
+    height: 33px;
+    line-height: 30px;
+}
+
+.navbar-default .navbar-nav > li.dropdown > a.dropdown-toggle:focus,
+.navbar-default .navbar-nav > li.dropdown > a.dropdown-toggle:hover {
+    background: #01d9f4;
+    color: #fff;
+}
+
+.dropdown-arrow {
+    width: 33px;
+    border-left: 1px solid #018696;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+
+/*end new code*/
+
+.tfi .dropdown-arrow > .caret {
+    margin-left: 12px;
+    border-top: 6px dashed;
+    color: #fff;
+}
+
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu {
+    width: 100%;
+    background-color: #01b4ca;
+    padding: 0px 0px;
+    border-radius: 5px;
+    min-width: auto;
+}
+
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a:hover,
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a:focus {
+    background-color: #018696;
+    outline: none;
+}
+
+
+/*new*/
+
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li.first a:hover,
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li.first a:focus {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li.last a:hover,
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li.last a:focus {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*end new*/
+
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Lato-Black';
+}
+
+.tfi .navbar-default .navbar-nav > li.dropdown ul.dropdown-menu li a.dropdown-toggle.arrow {
+    padding: 0;
+}
+
+
+/* TFI overide courseware sequence nav z-index */
+
+.tfi-sequence-nav {
+    z-index: 1;
+}
+
+
+/* TFI course info in header style */
+
+.tfi-course-info-header {
+    float: left;
+    width: 30%;
+    margin-top: 19px;
+    margin-left: 11px;
+    font-family: 'Lato-Regular' !important;
+    font-size: 14px !important;
+    box-shadow: none !important;
+    color: #555;
+}
+
+.tfi-course-info-header span {
+    font-family: 'Lato-Black' !important;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+
+.tfi-customedx-small-logo {
+    width: 112px;
+    height: 58px;
+}
+
+.navbar-default .navbar-nav > li.dropdown_list > a.user {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #01b4ca;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li.dropdown_list > a.user:hover {
+    background: #01d9f4;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li.dropdown_list > a {
+    color: #01b4ca;
+    font-size: 18px;
+    line-height: 25px;
+    border-bottom: 3px solid #018696;
+    font-weight: normal;
+    font-family: 'Lato-Black';
+    color: #fff;
+    font-size: 17px;
+    background-color: #01b4ca;
+    border-radius: 5px;
+    height: 33px;
+    padding: 3px 22px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    text-transform: uppercase;
+    margin: 16px 0px 0px 6px;
+    display: inline-block;
+    float: left;
+}
+.navbar-default .navbar-nav > li.dropdown_list > a.dropdown-toggle {
+    width: auto;
+    padding: 0px 2px 0px 0px;
+    margin: 16px 0px 0px 0px;
+    height: 33px;
+    line-height: 30px;
+}
+.navbar-default .navbar-nav > li.dropdown_list > a.dropdown-toggle:focus, .navbar-default .navbar-nav > li.dropdown_list > a.dropdown-toggle:hover {
+    background: #01d9f4;
+    color: #fff;
+}
+.navbar-default .navbar-nav > li.dropdown_list > a.arrow {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.tfi .navbar-default .navbar-nav > li.dropdown_list ul.dropdown-menu {
+    width: 100%;
+    background-color: #01b4ca;
+    padding: 0px 0px;
+    border-radius: 5px;
+    min-width: auto;
+}
+.tfi .navbar-default .navbar-nav > li.dropdown_list ul.dropdown-menu > li{
+    background-color: #01b4ca;
+}
+
+.tfi .navbar-default .navbar-nav > li.dropdown_list ul.dropdown-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Lato-Black';
+}
+.tfi .navbar-default .navbar-nav > li.dropdown_list ul.dropdown-menu li.first a:hover, .tfi .navbar-default .navbar-nav > li.dropdown_list ul.dropdown-menu li.first a:focus {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #018696;
+    outline: none;
+}
+.tfi .navbar-default .navbar-nav > li.dropdown_list ul.dropdown-menu li a:hover, .tfi .navbar-default .navbar-nav > li.dropdown_list ul.dropdown-menu li a:focus {
+    background-color: #018696;
+    outline: none;
+}
+/*end header code*/
+@media (min-width: 768px) {
+    body.view-in-course #navbar-container, .tfi.footer .container.footer-align {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    body.view-in-course #navbar-container, .tfi.footer .container.footer-align {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    body.view-in-course #navbar-container, .tfi.footer .container.footer-align {
+        width: 1170px;
+    }
+}

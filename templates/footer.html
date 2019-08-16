@@ -1,0 +1,72 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  from django.core.urlresolvers import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<%namespace name='static' file='static_content.html'/>
+
+<!--========== FOOTER ==========-->
+<footer class="g-bg-color--dark">
+    <!-- Copyright -->
+    <div class="g-padding-y-30--xs">
+        <div class="row">
+            <div class="col-md-2 g-text-center--xs">
+                <a href="javascript:;">
+                    <img class="g-width-150--xs g-height-auto--xs" src="${static.url('assets/logo-files/png/logo-blue.png')}" alt="Firki Logo">
+                </a>
+            </div>
+            <div class="col-md-2 g-text-center--xs">
+                <h4 class="g-font-size-16--xs g-font-size-18--sm g-color--white g-text-left--xs g-text-center--sm">AN INITIATIVE BY</h4>
+                <a href="javascript:;">
+                    <img class="g-width-200--xs g-height-auto--xs" src="${static.url('assets/logo-files/png/tfi-footer-logo.png')}" alt="Firki Logo">
+                </a>
+            </div>
+            <div class="col-md-3 g-text-center--xs">
+                <a href="javascript:;">
+                    <img class="g-width-200--xs g-height-auto--xs" src="${static.url('assets/logo-files/png/hsbc-logo-2018.png')}" alt="Firki Logo">
+                </a>
+            </div>
+            <div class="col-md-2 g-text-left--xs social-icons">
+                <h4 class="g-font-size-16--xs g-font-size-18--sm g-color--white">GET THE APP</h4>
+                <div class="text-left"><!-- left replaced center-->
+                    <a href="javascript:;">
+                        <i class="ti-apple"></i>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=org.firki.mobile" target="_blank">
+                        <i class="ti-android"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 g-text-left--xs social-icons g-padding-y-20--smm">
+                <h4 class="g-font-size-16--xs g-font-size-18--sm g-color--white">FOLLOW US</h4>
+                <div class="text-center"><!-- left replaced center-->
+                    <a href="https://www.facebook.com/FirkiTFI" target="_blank">
+                        <i class="ti-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/3347531?trk=vsrp_companies_res_name&trkInfo=VSRPsearchId%3A2415773311451942329384%2CVSRPtargetId%3A3347531%2CVSRPcmpt%3Aprimary" target="_blank">
+                        <i class="ti-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/firkitfi" target="_blank">
+                        <i class="ti-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Copyright -->
+</footer>
+<!--========== END FOOTER ==========-->
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif

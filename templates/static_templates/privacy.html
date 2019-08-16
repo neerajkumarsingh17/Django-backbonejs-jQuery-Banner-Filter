@@ -1,0 +1,75 @@
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+<%! 
+from django.utils.translation import ugettext as _ 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+%>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Privacy Policy")}</%block>
+
+<div class="tfi container">
+	<section class="tfi mainContent">
+		<h2 class="mainHeading">${_("Privacy Policy")}</h2>
+
+		<p class="pageContentPara">
+		    ${_("Teach For India is committed to providing privacy for our web site visitors as well as recipients of our email messages. Teach For India promotes the tenets of opt-in email and privacy among our partners and employees. We are continuously evaluating our internal procedures and technology to ensure privacy at all levels in our organization.")}
+		</p>
+
+        <div class="hr-separator">&nbsp;</div>
+        <h3 class="sectionHeading privacyHeading">${_("Information Tracked")}</h3>
+        
+        <p class="pageContentPara">
+        	${_("At times we may use your IP address when necessary to help diagnose problems with our server and to administer our web site. We also may track browser types to help us understand our visitor’s needs related to our web site design. To the extent feasible, we will do so in a way that makes your personal information non-personally identifiable by aggregating data or removing identifying characteristics.")}
+        </p>
+        
+        <p class="pageContentPara">
+        	${_("There are registration and application sections of our web site where input forms require your name, e-mail address and other information. By submitting such forms, you give us permission to send email messages to you containing information relating to your interest in Teach For India. Each email we send will also contain instructions on how to opt-out of receiving future emails of any sort from Teach For India.")}
+        </p>
+        
+        <div class="hr-separator">&nbsp;</div>
+        <h3 class="sectionHeading privacyHeading">${_("Cookies")}</h3>
+        
+        <p class="pageContentPara">
+        	${_("Client-side cookies are used to verify the login status of visitors and registered users of our web site. Usage of a cookie is in no way linked to any personally identifiable information while on our site. If visitors reject a cookie, they may still use our site; however, they may not be able to log in, or access all areas of our site. (Cookie’s are text files we place in your computer’s browser to store your preferences.")}
+        </p>
+        
+        <div class="hr-separator">&nbsp;</div>
+        <h3 class="sectionHeading privacyHeading">${_("Security and Privacy")}</h3>
+        
+        <p class="pageContentPara">
+        	${_("We will never share, sell, or rent your individual personal information with or to any individual or organization without your advance permission or unless ordered by a court of law. Information submitted to us is only available to employees managing this information for purposes of contacting you, processing your application, or sending you e-mails related to your interest in Teach For India.")}
+        </p>
+        
+        <div class="hr-separator">&nbsp;</div>
+        <h3 class="sectionHeading privacyHeading">${_("Links to Other Websites")}</h3>
+        
+        <p class="pageContentPara">${_("Teach For India is not responsible for the privacy policies or the content of any other web site to which we link.")}</p>
+        
+        <div class="hr-separator">&nbsp;</div>
+        <h3 class="sectionHeading privacyHeading">${_("Choice/Opt-Out")}</h3>
+        
+        <p class="pageContentPara">
+        	${_("Our e-newsletter subscribers and website visitors are given the opportunity to opt-out of having their information used for purposes not directly related to our site at the point where we ask for the information.")}
+        </p>
+        
+        <p class="pageContentPara">
+        	${_("Users of our site will always be notified if their information is being collected by any outside parties. We do this to ensure our users can make an informed choice as to whether they should proceed with services that require an outside party, or not.")}
+        </p>
+        
+        <div class="hr-separator">&nbsp;</div>
+        <h3 class="sectionHeading privacyHeading">${_("Third Party Agreement")}</h3>
+        
+        <p class="pageContentPara">${_("This site works with a third party that collects anonymous traffic data at this site.")}</p>
+        
+        <div class="hr-separator">&nbsp;</div>
+        <h3 class="sectionHeading privacyHeading">${_("Notification of changes")}</h3>
+        
+        <p class="pageContentPara">
+        	${_("If we change our privacy policy, we will post these changes to ensure that our users are always aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it. If at any point we decide to use personally identifiable information in a manner different from that stated at the time it was collected, we will notify users by way of an email at the last address provided and/or by prominently posting notice of the changes on our website. Users will have a choice as to whether or not we use their information in this different manner. We will use information in accordance with the privacy policy under which information was collectedAny such changes may affect our use and sharing of personal information that you provided to us before our notification to you of the changes. If you do not wish to permit changes in our collection, use, or sharing of personal information that you have provided to us before the effective date of such changes, you must notify us before that effective date. Please be advised, however, that regardless of whether you provide such notice to us, the changes to this privacy policy will apply to any personal information that you provide to us on or after the effective date of such changes.")}
+        </p>
+
+	</section>
+</div>

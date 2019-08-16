@@ -1,0 +1,34 @@
+#video_div {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#playvideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+#lean_overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+#close_video {
+  font-size: x-large;
+  color: white;
+  float: right;
+}

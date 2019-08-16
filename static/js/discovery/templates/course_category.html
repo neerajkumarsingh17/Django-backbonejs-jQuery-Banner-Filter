@@ -1,0 +1,14 @@
+<% _.each(data.categories.terms, function(val, key){ %>
+    <% if (key != "") { %>
+        <div id="<%= key.replace(/ /g, '_').toLowerCase() %>" class="video-category slide-category">
+            <a href="javascript:;">
+                <h3><%= key.replace(/_/g, ' ').toUpperCase() %></h3>
+                <h3 class="theme-color">(<%= val %>)</h3><!--remove class course-count -->
+            </a>
+            <div class="video-list-slider"></div>
+        </div>
+    <% } %>
+<% }); %>
+<div id="all-courses" class="ease5 video-category slide-category">
+    <div class="video-list-slider"></div>
+</div>

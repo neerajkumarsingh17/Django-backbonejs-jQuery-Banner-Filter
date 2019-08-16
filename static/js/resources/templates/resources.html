@@ -1,0 +1,68 @@
+<table id="resources_data" class="table table-hover">
+  <tbody>
+    <% _.each(results.results, function(obj){ %>
+      <tr data-pk='<%= obj.id %>' class='resource_info_view'>
+      <% if (obj.file_type_name=="PDF") { %>
+        <td class = "resource_view">
+          <a href="javascript:;" data-pk='<%= obj.id %>' class='tbl-btn resource_view'>
+         <i class="fas fa-book-open" style="color:#fbb450;font-size: 15px;"></i>
+          <!-- <img src="https://image.flaticon.com/icons/svg/171/171322.svg" style="color:#fbb450;font-size: 15px;">-->
+          </a>
+        </td><% } %>
+        <% if (obj.file_type_name=="Video") { %><td class = "resource_view">
+        <a href="javascript:;" data-pk='<%= obj.id %>' class='tbl-btn resource_view'>
+          <i class="fas fa-play-circle" style="color:#fbb450; font-size: 15px;"></i>
+        </a>
+        </td><% } %>
+        <td class = "resource_view" style="width: 260px;"><%= obj.name %>
+        <p style="font-size: xx-small;">Grade <% _.each(obj.grade, function(gd){ %>
+             <%= gd.name %>, 
+          <% }); %>|<%= obj.subject_name %>|<%= obj.content_partner_name %>
+          </p>
+        </td>
+        <td><td>
+        <td><td>
+        <td><td>
+        <td><td>
+        <td><td>
+        <td><a href="<%= obj.file %>" class="tbl-btn resource_download" target="_new"><i class="ti-thumb-up" style="color:#6e6e6e"></i></a>Like</td>
+        <td><a href="<%= obj.file %>" class="tbl-btn resource_download" target="_new"><i class="ti-sharethis" style="color:#6e6e6e"></i></a>Share</td>
+        <td><a href="<%= obj.file %>" class="tbl-btn resource_download" target="_new"><i class="ti-bookmark" style="color:#6e6e6e"></i></a>Bookmark</td>
+       <!-- <td>
+          <% _.each(obj.grade, function(gd){ %>
+             <%= gd.name %>, 
+          <% }); %>
+        </td>
+        <td><%= obj.subject_name %></td>
+        <td><%= obj.content_partner_name %></td>
+        <td><%= obj.file_type_name %></td>-->
+        <td>
+          <% if (obj.file) { %>
+              <a href="<%= obj.file %>" class="tbl-btn resource_download" target="_new">
+                <i class="ti-download"></i>
+              </a>Download
+          <% }else{%>
+              <a href="<%= obj.link %>" class="tbl-btn resource_download" target="_new">
+                <i class="ti-download"></i>
+              </a>
+          <% } %>
+        </td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+   <ul class="pagination" style="margin: 5px 0 10px 0">
+    
+    <li class="<% if(!results.pagination.previous){ %>disabled<% }else{ %>page-link <% } %>" data-pk='<%= results.pagination.previous %>'>
+      <a href="javascript:void(0);" aria-label="Previous">
+        <span aria-hidden="true">«</span>
+      </a>
+    </li>
+
+    <li class="<% if(!results.pagination.next){ %>disabled<% }else{ %>page-link <% } %>" data-pk='<%= results.pagination.next %>' >
+      <a href="javascript:void(0);" aria-label="Next">
+        <span aria-hidden="true">»</span>
+      </a>
+    </li>
+</ul>

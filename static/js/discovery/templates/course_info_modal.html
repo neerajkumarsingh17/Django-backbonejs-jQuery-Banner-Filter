@@ -1,0 +1,56 @@
+
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="vs-video-description-drop border-box" style='display: block;'>
+                <div class="drop-display">
+                    <!-- <div class="vs-drop-image">
+                        <img src="<%- image_url %>">
+                    </div> -->
+                    <div class="row" id="for_img">    
+                      <button type="button" class="close pull-right close-btn" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      <div class="cell">    
+                          <img class="img-responsive" src="<%- image_url %>"  onerror="this.src='/static/firki_theme_new/images/img-pattern-blue.png'">
+                      </div>
+                    </div>
+                    <div class="vs-drop-details">
+                        
+                        <h4 class="drop-title"><%- content.display_name %></h4>
+                        <% if (typeof(levels) !== "undefined") { %>
+                            <p class="drop-description">
+                            <% if (typeof(categories) !== "undefined") { %>
+                                <%- categories %> | 
+                            <% } %>
+                            <%- levels %>  
+                            <%- language %>
+    
+                            </p>
+                            <p class="contains"><%- content.short_description %> </p>
+                       <!--<p>
+                        
+                            ${get_course_about_section(request, course, "short_description")}
+                        </p>
+                        -->
+                        <% } %>
+                        <a href="/courses/<%- course %>/about" class="button vs-drop-button vs-drop-link">View Course <i class="fa fa-play-circle-o ease3" aria-hidden="true"></i></a>
+                        <% if (typeof(journal_pages_display) !== "undefined") { %>
+                            <% if (journal_pages_display) { %>
+                                <a href="/courses/<%- course %>/journal_pages" target="_blank" class="button vs-drop-button vs-drop-link">Journal Pages <i class="fa fa-play-circle-o ease3" aria-hidden="true"></i></a>
+                            <% } %>
+                        <% } %>
+                        <% if (typeof(learning_circle_plan_display) !== "undefined") { %>
+                            <% if (learning_circle_plan_display) { %>
+                                <a href="/courses/<%- course %>/learning_circle_plan" target="_blank" class="button vs-drop-button vs-drop-link">Learning Circle Plan <i class="fa fa-play-circle-o ease3" aria-hidden="true"></i></a>
+                            <% } %>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->

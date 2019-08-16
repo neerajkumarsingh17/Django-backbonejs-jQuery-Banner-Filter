@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load sekizai_tags i18n configuration theme_pipeline optional_include staticfiles %}
+{% load url from future %}
+<html lang="{{LANGUAGE_CODE}}">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{{ platform_name }}{% endblock %}</title>
+
+  <link rel="icon" type="image/x-icon" href="{% favicon_path %}" />
+
+  {% with "js/i18n/"|add:LANGUAGE_CODE|add:"/djangojs.js" as i18njs_path %}
+    <script type="text/javascript" src="{% static i18njs_path %}"></script>
+  {% endwith %}
+
+  {% stylesheet 'style-vendor' %}
+  {% stylesheet 'style-main-v1' %}
+
+  {% block main_vendor_js %}
+  {% javascript 'main_vendor' %}
+  {% endblock %}
+  {% block headextra %}{% endblock %}
+  {% render_block "css" %}
+
+  {% optional_include "head-extra.html"|microsite_template_path %}
+
+  <meta name="path_prefix" content="{{EDX_ROOT_URL}}">
+  <link href="{%static 'firki/css/custom_tfi_bootstrap.css' %}" rel="stylesheet">
+  <link href="{%static 'firki/css/common.css' %}" rel="stylesheet">
+  <link href="{%static 'firki/css/tfi_custom_header.css' %}" rel="stylesheet">
+  <link href="{%static 'firki/css/tfi_custom_footer.css' %}" rel="stylesheet">
+  <link href="{%static 'firki/css/tfi_reset_password.css' %}" rel="stylesheet">
+  <script src="{%static 'firki/js/tfi_custom_common.js' %}"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+
+  <!-- Vendor Styles -->
+  <link href="{%static 'assets/css/animate.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{%static 'assets/vendor/themify/themify.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{%static 'assets/vendor/scrollbar/scrollbar.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{%static 'assets/vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{%static 'assets/vendor/swiper/swiper.min.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{%static 'assets/vendor/cubeportfolio/css/cubeportfolio.min.css' %}" rel="stylesheet" type="text/css"/>
+
+  <!-- Theme Styles -->
+  <link href="{%static 'assets/css/style.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{%static 'assets/css/global/global.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{%static 'assets/css/main-theme.css' %}" rel="stylesheet" type="text/css"/>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{%static 'assets/img/favicon.ico' %}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{%static 'assets/img/favicon.png' %}">
+
+</head>
+
+<body class="{% block bodyclass %}{% endblock %} lang_{{LANGUAGE_CODE}} tfi">
+  <div class="window-wrap" dir="{{LANGUAGE_BIDI|yesno:'rtl,ltr'}}">
+    
+    {% with course=request.course %}
+      {% include "header.html"|microsite_template_path with online_help_token=online_help_token  %}
+    {% endwith %}
+    <div class="content-wrapper tfi-content-wrapper" id="content">
+      {% block body %}{% endblock %}
+      {% block bodyextra %}{% endblock %}
+    </div>
+    {% with course=request.course %}
+      {% include "footer.html"|microsite_template_path %}
+    {% endwith %}
+
+  </div>
+
+    {% javascript 'base_application' %}
+
+
+
+  <script type="text/javascript" src="{%static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/jquery.smooth-scroll.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/jquery.back-to-top.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/scrollbar/jquery.scrollbar.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/swiper/swiper.jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/waypoint.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/counterup.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/jquery.parallax.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/vendor/jquery.wow.min.js' %}"></script>
+
+  <!-- General Components and Settings -->
+  <script type="text/javascript" src="{%static 'assets/js/global.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/header-sticky.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/scrollbar.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/magnific-popup.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/swiper.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/counter.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/portfolio-3-col.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/parallax.min.js' %}"></script>
+  <script type="text/javascript" src="{%static 'assets/js/components/wow.min.js' %}"></script>
+  <!--========== END JAVASCRIPTS ==========-->
+
+    {% render_block "js" %}
+</body>
+</html>
+
+{% comment %}
+  This is a django template version of our main page from which all
+  other pages inherit. This file should be rewritten to reflect any
+  changes in main.html! Files used by {% include %} can be written
+  as mako templates.
+
+  Inheriting from this file allows us to include apps that use the
+  django templating system without rewriting all of their views in
+  mako.
+{% endcomment %}
